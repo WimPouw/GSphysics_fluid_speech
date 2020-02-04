@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.4)  4 FEB 2020 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.4)  4 FEB 2020 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,392 +846,398 @@ nalysis-1.pdf  used on input line 319.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [24 <./GS_physics_in_fluid_speech_files/figure-latex/impact analysis-1.pdf>] [2
 5] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]pdfTeX warning (ext4): dest
-ination with the same identifier (name{ref-cooperriderForegroundGestureBackgrou
-nd2019}) has been already used, duplicate ignored
+ination with the same identifier (name{ref-amazeenCouplingBreathingMovement2001
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.550 ...erriderForegroundGestureBackground2019}{}
+l.553 ...f-amazeenCouplingBreathingMovement2001}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-cooperriderForegroundGestureBackgroun
+d2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.556 ...erriderForegroundGestureBackground2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-corballisHandMouthOrigins2002}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.553 ...rget{ref-corballisHandMouthOrigins2002}{}
+l.559 ...rget{ref-corballisHandMouthOrigins2002}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-cordoPropertiesPosturalAdjustments198
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.556 ...cordoPropertiesPosturalAdjustments1982}{}
+l.562 ...cordoPropertiesPosturalAdjustments1982}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-cravottaEffectsEncouragingUse2019}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.559 ...{ref-cravottaEffectsEncouragingUse2019}{}
+l.565 ...{ref-cravottaEffectsEncouragingUse2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-dannerQuantitativeAnalysisMultimodal2
 018}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.562 ...nnerQuantitativeAnalysisMultimodal2018}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-ejiriRelationshipRhythmicBehavior1998
-}) has been already used, duplicate ignored
+l.568 ...nnerQuantitativeAnalysisMultimodal2018}{}
+                                                  % [36]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-ejiriRelationshipRhythmicBehavio
+r1998}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 ...-ejiriRelationshipRhythmicBehavior1998}{}
+l.571 ...-ejiriRelationshipRhythmicBehavior1998}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ejiriCooccurencesPreverbalVocal2001})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.568 ...ef-ejiriCooccurencesPreverbalVocal2001}{}
-                                                  % [36]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-esteve-gibertProsodicStructureSh
-apes2013}) has been already used, duplicate ignored
+l.574 ...ef-ejiriCooccurencesPreverbalVocal2001}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-esteve-gibertProsodicStructureShapes2
+013}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.571 ...teve-gibertProsodicStructureShapes2013}{}
+l.577 ...teve-gibertProsodicStructureShapes2013}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-feyereisenCognitivePsychologySpeechRe
 lated2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.574 ...enCognitivePsychologySpeechRelated2017}{}
+l.580 ...enCognitivePsychologySpeechRelated2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-frohlichMultimodalCommunicationLangua
 ge2019}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.577 ...ichMultimodalCommunicationLanguage2019}{}
+l.583 ...ichMultimodalCommunicationLanguage2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-gardenforsDemonstrationPantomimeEvolu
 tion2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.580 ...orsDemonstrationPantomimeEvolution2017}{}
+l.586 ...orsDemonstrationPantomimeEvolution2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ghazanfarMultisensoryVocalCommunicati
 on2013}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.583 ...nfarMultisensoryVocalCommunication2013}{}
+l.589 ...nfarMultisensoryVocalCommunication2013}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ghazanfarVocaltractResonancesIndexica
 l2007}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.586 ...anfarVocaltractResonancesIndexical2007}{}
+l.592 ...anfarVocaltractResonancesIndexical2007}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ginosarLearningIndividualStyles2019})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.589 ...ef-ginosarLearningIndividualStyles2019}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-hardusToolUseWild2009}) has been alre
-ady used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.592 ...\hypertarget{ref-hardusToolUseWild2009}{}
+l.595 ...ef-ginosarLearningIndividualStyles2019}{}
                                                   % [37]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-hastieGamGeneralizedAdditive2019
-}) has been already used, duplicate ignored
+destination with the same identifier (name{ref-hardusToolUseWild2009}) has been
+ already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.595 ...t{ref-hastieGamGeneralizedAdditive2019}{}
+l.598 ...\hypertarget{ref-hardusToolUseWild2009}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-hastieGamGeneralizedAdditive2019}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.601 ...t{ref-hastieGamGeneralizedAdditive2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-heAmplitudeEnvelopeKinematics2017a}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.598 ...ref-heAmplitudeEnvelopeKinematics2017a}{}
+l.604 ...ref-heAmplitudeEnvelopeKinematics2017a}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-hollerMultimodalLanguageProcessing201
 9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.601 ...hollerMultimodalLanguageProcessing2019}{}
+l.607 ...hollerMultimodalLanguageProcessing2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-iversonHandMouthBrain2005}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.604 ...ertarget{ref-iversonHandMouthBrain2005}{}
+l.610 ...ertarget{ref-iversonHandMouthBrain2005}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kelsoConvergingEvidenceSupport1984}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.607 ...ref-kelsoConvergingEvidenceSupport1984}{}
+l.613 ...ref-kelsoConvergingEvidenceSupport1984}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kendonReflectionsGesturefirstHypothes
 is2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.610 ...nReflectionsGesturefirstHypothesis2017}{}
+l.616 ...nReflectionsGesturefirstHypothesis2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kitaPointingWhereLanguage2003}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.613 ...rget{ref-kitaPointingWhereLanguage2003}{}
+l.619 ...rget{ref-kitaPointingWhereLanguage2003}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-krahmerEffectsVisualBeats2007}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.616 ...rget{ref-krahmerEffectsVisualBeats2007}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-krivokapicGesturalCoordinationProsodi
-c2014}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.619 ...okapicGesturalCoordinationProsodic2014}{}
+l.622 ...rget{ref-krahmerEffectsVisualBeats2007}{}
                                                   % [38]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-krivokapicKinematicStudyProsodic
-2017}) has been already used, duplicate ignored
+destination with the same identifier (name{ref-krivokapicGesturalCoordinationPr
+osodic2014}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.622 ...f-krivokapicKinematicStudyProsodic2017}{}
+l.625 ...okapicGesturalCoordinationProsodic2014}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-krivokapicKinematicStudyProsodic2017}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.628 ...f-krivokapicKinematicStudyProsodic2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kucherenkoAnalyzingInputOutput2019}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.625 ...ref-kucherenkoAnalyzingInputOutput2019}{}
+l.631 ...ref-kucherenkoAnalyzingInputOutput2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-lancasterRespiratoryMuscleActivity199
 5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.628 ...lancasterRespiratoryMuscleActivity1995}{}
+l.634 ...lancasterRespiratoryMuscleActivity1995}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-larssonBipedalStepsDevelopment2019}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.631 ...ref-larssonBipedalStepsDevelopment2019}{}
+l.637 ...ref-larssonBipedalStepsDevelopment2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-leonardTemporalRelationBeat2011}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.634 ...et{ref-leonardTemporalRelationBeat2011}{}
+l.640 ...et{ref-leonardTemporalRelationBeat2011}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-levinsonOriginHumanMultimodal2014}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.637 ...{ref-levinsonOriginHumanMultimodal2014}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-loehrTemporalStructuralPragmatic2012}
-) has been already used, duplicate ignored
+l.643 ...{ref-levinsonOriginHumanMultimodal2014}{}
+                                                  % [39]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-loehrTemporalStructuralPragmatic
+2012}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.640 ...f-loehrTemporalStructuralPragmatic2012}{}
+l.646 ...f-loehrTemporalStructuralPragmatic2012}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-mcclavePitchManualGestures1998}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.643 ...get{ref-mcclavePitchManualGestures1998}{}
-                                                  % [39]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-mendoza-dentonSemioticLayeringGe
-sture2011}) has been already used, duplicate ignored
+l.649 ...get{ref-mcclavePitchManualGestures1998}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-mendoza-dentonSemioticLayeringGesture
+2011}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.646 ...doza-dentonSemioticLayeringGesture2011}{}
+l.652 ...doza-dentonSemioticLayeringGesture2011}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-parrellSpatiotemporalCouplingSpeech20
 14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.649 ...arrellSpatiotemporalCouplingSpeech2014}{}
+l.655 ...arrellSpatiotemporalCouplingSpeech2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-perrierMotorEquivalenceSpeech2015}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.652 ...{ref-perrierMotorEquivalenceSpeech2015}{}
+l.658 ...{ref-perrierMotorEquivalenceSpeech2015}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pinheiroNlmeLinearNonlinear2019}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.655 ...et{ref-pinheiroNlmeLinearNonlinear2019}{}
+l.661 ...et{ref-pinheiroNlmeLinearNonlinear2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pisanskiVoiceModulationWindow2016}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.658 ...{ref-pisanskiVoiceModulationWindow2016}{}
+l.664 ...{ref-pisanskiVoiceModulationWindow2016}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pisanskiReturnOzVoice2014}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.661 ...ertarget{ref-pisanskiReturnOzVoice2014}{}
+l.667 ...ertarget{ref-pisanskiReturnOzVoice2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pisanskiCanBlindPersons2016}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.664 ...target{ref-pisanskiCanBlindPersons2016}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-pouwEntrainmentModulationGesture2019}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.667 ...f-pouwEntrainmentModulationGesture2019}{}
+l.670 ...target{ref-pisanskiCanBlindPersons2016}{}
                                                   % [40]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-pouwQuantifyingGesturespeechSync
-hrony2019}) has been already used, duplicate ignored
+destination with the same identifier (name{ref-pouwEntrainmentModulationGesture
+2019}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.670 ...wQuantifyingGesturespeechSynchrony2019}{}
+l.673 ...f-pouwEntrainmentModulationGesture2019}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-pouwQuantifyingGesturespeechSynchrony
+2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.676 ...wQuantifyingGesturespeechSynchrony2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwEnergyFlowsGesturespeech2019a}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.673 ...{ref-pouwEnergyFlowsGesturespeech2019a}{}
+l.679 ...{ref-pouwEnergyFlowsGesturespeech2019a}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwGesturespeechPhysicsBiomechanical
 2019}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.676 ...wGesturespeechPhysicsBiomechanical2019}{}
+l.682 ...wGesturespeechPhysicsBiomechanical2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwAcousticSpecificationUpper2019}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.679 ...ref-pouwAcousticSpecificationUpper2019}{}
+l.685 ...ref-pouwAcousticSpecificationUpper2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwSocialResonanceAcoustic2019}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.682 ...et{ref-pouwSocialResonanceAcoustic2019}{}
+l.688 ...et{ref-pouwSocialResonanceAcoustic2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwMaterialsTutorialGespin20192019})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.685 ...ef-pouwMaterialsTutorialGespin20192019}{}
+l.691 ...ef-pouwMaterialsTutorialGespin20192019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-prieurOriginsGesturesLanguage2019}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.688 ...{ref-prieurOriginsGesturesLanguage2019}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-ravignaniRhythmSpeechAnimal2019}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.691 ...et{ref-ravignaniRhythmSpeechAnimal2019}{}
+l.694 ...{ref-prieurOriginsGesturesLanguage2019}{}
                                                   % [41]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-rochet-capellanSpeechFocusPositi
-on2008}) has been already used, duplicate ignored
+destination with the same identifier (name{ref-ravignaniRhythmSpeechAnimal2019}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.694 ...rochet-capellanSpeechFocusPosition2008}{}
+l.697 ...et{ref-ravignaniRhythmSpeechAnimal2019}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-rochet-capellanSpeechFocusPosition200
+8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.700 ...rochet-capellanSpeechFocusPosition2008}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-roschWaveletCompGuidedTour2014}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.697 ...get{ref-roschWaveletCompGuidedTour2014}{}
+l.703 ...get{ref-roschWaveletCompGuidedTour2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ruiterProductionGestureSpeech2000}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.700 ...{ref-ruiterProductionGestureSpeech2000}{}
+l.706 ...{ref-ruiterProductionGestureSpeech2000}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-silvaSteadystateStressOne2007}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.703 ...rget{ref-silvaSteadystateStressOne2007}{}
+l.709 ...rget{ref-silvaSteadystateStressOne2007}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-stoltmannSyllablepointingGestureCoord
 ination2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.706 ...yllablepointingGestureCoordination2017}{}
+l.712 ...yllablepointingGestureCoordination2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-streeckDepictingGesture2008}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.709 ...target{ref-streeckDepictingGesture2008}{}
+l.715 ...target{ref-streeckDepictingGesture2008}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-tomaselloOriginsHumanCommunication200
 8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.712 ...tomaselloOriginsHumanCommunication2008}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-treffnerIntentionalAttentionalDynamic
-s2002}) has been already used, duplicate ignored
+l.718 ...tomaselloOriginsHumanCommunication2008}{}
+                                                  % [42]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-treffnerIntentionalAttentionalDy
+namics2002}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.715 ...fnerIntentionalAttentionalDynamics2002}{}
+l.721 ...fnerIntentionalAttentionalDynamics2002}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-turveyCoordination1990}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.718 ...hypertarget{ref-turveyCoordination1990}{}
-                                                  % [42]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-turveyMediumHapticPerception2014
-}) has been already used, duplicate ignored
+l.724 ...hypertarget{ref-turveyCoordination1990}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-turveyMediumHapticPerception2014}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.721 ...t{ref-turveyMediumHapticPerception2014}{}
+l.727 ...t{ref-turveyMediumHapticPerception2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-wagnerGestureSpeechInteraction2014}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.724 ...ref-wagnerGestureSpeechInteraction2014}{}
+l.730 ...ref-wagnerGestureSpeechInteraction2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-winkelmannWrasspInterfaceASSP2018}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.727 ...{ref-winkelmannWrasspInterfaceASSP2018}{}
+l.733 ...{ref-winkelmannWrasspInterfaceASSP2018}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-zelicArticulatoryConstraintsSpontaneo
 us2015}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.730 ...ArticulatoryConstraintsSpontaneous2015}{}
+l.736 ...ArticulatoryConstraintsSpontaneous2015}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-zhangVocalDevelopmentMorphological201
 8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.733 ...zhangVocalDevelopmentMorphological2018}{}
+l.739 ...zhangVocalDevelopmentMorphological2018}{}
                                                   % AED endfloat: Processing en
 d Figures and Tables [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 739.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 739.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 745.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 745.
 (./GS_physics_in_fluid_speech.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 739.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 739.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 745.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 745.
 Package rerunfilecheck Info: File `GS_physics_in_fluid_speech.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 754D28F64D50A4C6EB5936B304A0EB0F;4531.
  ) 
 Here is how much of TeX's memory you used:
- 14170 strings out of 483194
- 212722 string characters out of 5964919
- 465745 words of memory out of 5000000
+ 14171 strings out of 483194
+ 212762 string characters out of 5964919
+ 464745 words of memory out of 5000000
  28750 multiletter control sequences out of 15000+600000
  575557 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1243,10 +1249,10 @@ m/lmr12.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publ
 ic/lm/lmr8.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
 ublic/lm/lmri12.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/ty
 pe1/public/lm/lmss8.pfb>
-Output written on GS_physics_in_fluid_speech.pdf (43 pages, 2337646 bytes).
+Output written on GS_physics_in_fluid_speech.pdf (43 pages, 2337826 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 535 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 536 compressed objects within 6 object streams
+ 155 named destinations out of 1000 (max. 500000)
  228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
