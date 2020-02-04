@@ -1,0 +1,492 @@
+---
+title             : "Gesture-Speech Physics in Fluid Speech and Rhythmic Hand Movement"
+shorttitle        : "Gesture-Speech Physics in Fluid Speech"
+
+author: 
+  - name          : "Wim Pouw"
+    affiliation   : "1,2,3"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Donders Institute for Brain, Cognition and Behaviour, Heyendaalseweg 135, 6525 AJ Nijmegen"
+    email         : "w.pouw@psych.ru.nl"
+  - name          : "Lisette de Jonge-Hoekstra"
+    affiliation   : "1,4"
+  - name          : "Steven J. Harrison"
+    affiliation   : "1"
+  - name          : "Alex Paxton"
+    affiliation   : "1"
+  - name          : "James A. Dixon"
+    affiliation   : "1"
+
+affiliation:
+  - id            : "1"
+    institution   : "Center for the Ecological Study of Perception and Action, University of Connecicut"
+  - id            : "2"
+    institution   : "Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen"
+  - id            : "3"
+    institution   : "Institute for Psycholinguistics, Max Planck Nijmegen"
+  - id            : "4"
+    institution   : "University of Groningen"
+
+
+authornote: |
+  All anonymised data and analysis code are available at the Open Science Framework (https://osf.io/tgbmw/). This manuscript has been written with Rmarkdown - for the code-embedded reproducible version of this manuscript please see the Rmarkdown (.Rmd) file available at the OSF page.  This research has been funded by The Netherlands Organisation of Scientific Research (NWO; Rubicon grant “Acting on Enacted Kinematics”, Grant Nr. 446-16-012; PI Wim Pouw).  Acknowledgement: We would like to thank Jenny Michlich for pointing us to relevant bioacoustic literature on bats.
+
+abstract: |
+  Communicative hand gestures are often temporally coordinated with emphatic quasi-rhythmic expressions in speech - salient moments of gestural movement (e.g., quick changes in speed) often co-occur with salient moments in speech prosody (e.g., peaks in fundamental frequency and intensity). This temporal coordinative feat has been invariably rendered as a purely neural-cognitive achievement emerging in late stages of cognitive development. However, recently a potential biomechanical gesture-speech coupling has been discovered. Forces produced during gesturing are absorped by a tensioned body leading to changes in respiratory-related activity and thereby affecting vocalization F0 and intensity during steady-state vocalization and mono-syllable utterances. Such results could not yet generalize to fluid continuous speech. In the current experiment (N = 34) we show that gesture-speech physics is present in fluid speech too. We find that when participants are rhythmically moving their upper limbs vs. not moving, that F0 and amplitude envelope of fluid speech is heightened, and such effects are more pronounced for higher-impetus arm versus lower-impetus wrist movement. We confirm that effects on acoustics arise especially during moments of peak-impetus (i.e, the beat) of the movement, namely around a deceleration phases of the movement. Finally, higher deceleration rates were related to higher peaks in acoustics, confirming a role for force-transmissions of gesture onto the tensioned body, affecting speech. The current study serves as an important confirmation that gesture constrains speech acoustics by biomechanical necessity. The emergence of human multimodal language may have thus emerged from characteristics of the body, which is a radically embodied revision of current cognitive, ontogenetic, and phylogenetic accounts of why humans gesture.
+
+  
+keywords          : "hand gesture, speech production, speech acoustics, biomechanics, entrainment"
+wordcount         : "X"
+
+bibliography      : ["mybib.bib", "r-references.bib"]
+
+fig_caption       : no
+floatsintext      : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man, noextraspace"
+output            : papaja::apa6_docx
+
+
+---
+
+```{r setup, include = FALSE}
+library("papaja") #fyi use 'papaja::apa6_pdf' for knitting a pdf
+knitr::opts_chunk$set(fig.cap = "")
+knitr::opts_chunk$set(dpi=600)
+```
+
+
+```{r analysis-preferences_packages_functions_etc, warning = FALSE}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+#load libraries
+library(dplyr)   #data formatting
+library(ggplot2) #plotting 3d density plots
+library(ggbeeswarm) #plotting of density jitter distributions
+library(gridExtra)  #plotting mulitple pannels
+library(nlme)       #mixed regression
+library(ggplot2)    #plotting 3d density plots
+library(gam)        #generalizized additive models
+library(mgcv)       #plotting generalized additive models
+library(itsadug)    #plotting generalized additive models
+library(scales)     #for rescaling variables
+```
+```{r functions_themes, echo = FALSE, message = FALSE}
+#save blue theme for plotting later on
+bluetheme <- theme(
+  panel.background = element_rect(fill = "#BFD5E3", colour = "#6D9EC1",
+                                size = 2, linetype = "solid"),
+  panel.grid.major = element_line(size = 0.5, linetype = 'solid',
+                                colour = "white"), 
+  panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
+                                colour = "white"),
+  strip.background =element_rect(fill="#BFD5E3"))
+```
+```{r load_in_dataetc, echo = FALSE, message=FALSE, warning=FALSE,cache = TRUE}
+#set directories, load main data, and order factors
+parentfolder <- "D:/Research_Projects/Respiration, Gesture, Speech/MainStudy_fluidspeech/GIT_GS_PhysicsFluidSpeech/GIT_GS_PhysicsFluidSpeech/MS_markdown" 
+basefolder <- dirname(parentfolder)
+meta <- read.csv(paste0(basefolder, "/DATA/META/META.csv"))
+fd <- read.csv(paste0(basefolder, "/DATA/Main/MERGED_DATA/fd.csv"))
+fd$condition <- factor(fd$condition, levels = c("PASSIVE", "WRIST", "ARM"))
+cartoon_duration_s <- c(50, 33, 39, 75, 23, 38, 77, 21, 89, 120, 100, 48) #seconds for each video clip
+
+```
+
+
+  Communicative hand gestures in humans are so ubiquitously and often unconsciously produced by speakers that is easy to overlook that they are a hallmark of complexity. Gestures aid conceptual expression by seamlessly interweaving relevant pragmatic, iconic and symbolic signals with speech [@hollerMultimodalLanguageProcessing2019; @streeckDepictingGesture2008; @feyereisenCognitivePsychologySpeechRelated2017]. Gestures direct attention of others to relevant aspects of the environment as to mark relevant references *often only implicitly made* in fluid speech [@gardenforsDemonstrationPantomimeEvolution2017; @cooperriderForegroundGestureBackground2019; @kitaPointingWhereLanguage2003]. For all such multimodal utterances to do their communicative work, gesture and speech must be tightly temporally coupled to form a sensible speech-gesture whole. And in fact, gestures, no matter what they depict, often coordinate temporally with emphatic stress in speech such that emphatic moments of gesture temporally allign with such prosodic aspects of speech. The explanatory goal then is understanding how the gesture-speech system constrains its degrees of freedom [@turveyCoordination1990]. How does it settle a 
+breadth of *possible* dynamic gesture-speech expressions into an *actual* multimodal utterance?  
+
+  In this article we show that movement of the upper limbs constrains fluid speech through biomechanics. We show thereby that there is a further complexity to vocalization in that it is inhabited by dynamic aspects of movement, which mechanically simplifies how gesture and speech are coordinated.
+  
+## The gesture-speech prosody link
+  Good odds for identifying a functional reduction of degrees of freedom in the gesture-speech system is the tight prosodic coordination of speech and gesture [@wagnerGestureSpeechInteraction2014; @krivokapicGesturalCoordinationProsodic2014], which is often referred to as the beat-like quality of co-speech gesture. This can manifest itself in several ways. In fluid spontaneous speech, human coders trained to identify prosody in gesture and speech found that gestures' expressive meaningful strokes often allign with *pitch accents* in speech - accents which are acoustically defined by positive excursions in the fundemantal frequency (F0), duration and intensity [@loehrTemporalStructuralPragmatic2012; @mcclavePitchManualGestures1998;@mendoza-dentonSemioticLayeringGesture2011]. Such temporal gesture-speech prosody correlations have been replicated in motion-tracking studies showing for example that gesture's peak velocities often co-occur near peaks in F0, even when such gestures are depicting something [@dannerQuantitativeAnalysisMultimodal2018; @pouwEntrainmentModulationGesture2019; @pouwQuantifyingGesturespeechSynchrony2019; @leonardTemporalRelationBeat2011; @krivokapicGesturalCoordinationProsodic2014].  
+  In pointing gestures it has been found that pitch accents allign neatly with the maximum extension of the pointing movement, such that pointing temporally lands on the first syllable in strong-weak stressed "PApa", and alligning with the second syllable when uttering the weak-strong "paPA" [@esteve-gibertProsodicStructureShapes2013; @rochet-capellanSpeechFocusPosition2008]. During finger-tapping and mono-syllable utterances, when participants are instructed to alternate prominence in their uterrance ("pa, PA, pa, PA") the tapping action will automatically follow and will consist of a larger movement during stressed syllables [@parrellSpatiotemporalCouplingSpeech2014]. Conversely, if participants are instructed to alternate stress in finger tapping (STRONG weak STRONG weak tapping), speech will follow, with larger oral-labial appertures for stressed vs. unstressed tapping movements.  
+  In more natural continuous speech this has been found too [@krivokapicKinematicStudyProsodic2017; @krahmerEffectsVisualBeats2007]. For example, even when people do not intend to change the stressed patterning of their speech, gesturing will concurrently affect speech acoustics (increasing vocalization duration, lowering of the second formant) similar to acoustic modulations for explicitly intended stressed speech [@krahmerEffectsVisualBeats2007]. Finally, it has been shown that gesture and speech cycle rate seem to be attracted towards particular (polyrhythmic) stabilities, where in-phase speech-tapping is preferred over anti-phase coordination, or where 2:1 speech:tapping ratios are preferred over more complex integer ratios such as 2:5 [@stoltmannSyllablepointingGestureCoordination2017;@zelicArticulatoryConstraintsSpontaneous2015; @kelsoConvergingEvidenceSupport1984; @treffnerIntentionalAttentionalDynamics2002]. Such results indicate that gesture and speech are interaction-dominant, as assymetric activity between systems is not tolerated well, which would be no issue if gesture and speech were additive independent systems.  
+  
+## Gesture-speech physics as a possibly radically embodied revision of cognitive, ontogenetic, and phylogenetic accounts of gesture  
+  There is a common thread in current understanding of the gesture-prosody link, Cognitively, it is judged to be solved by purely neural-cognitive resources [@ruiterProductionGestureSpeech2000; @iversonHandMouthBrain2005]. After all, when an event in gesture is timed together with an event in speech, and there are no clear environmental constraints that could constrain a behavior, there must be a centralized timing mechanism that couples both systems in synchrony. Ontogenetically, the gesture-speech prosody link in the form of beat-like gestures is held to be dependent on neural development occurring in relatively late stages of maturation - after more than 16 months of age [@iversonHandMouthBrain2005]. Phylogenetically, beat-like gestures are assumed to emerge later in the history of anatomically modern humans than the invention of depictive gestures [@frohlichMultimodalCommunicationLanguage2019], although often the gesture-prosody link is simply not mentioned at all in a plausible story how multimodal language might have arisen in humans [@kendonReflectionsGesturefirstHypothesis2017; @prieurOriginsGesturesLanguage2019; @levinsonOriginHumanMultimodal2014].  
+  The available evidence for the fundmantal gesture-prosody link together with recent findings on a possible biomechanical gesture-prosody link could however revise some current assumptions. Recently it has been shown that hand gesturing physically impacts vocalic aspects of speech production [@pouwGesturespeechPhysicsBiomechanical2019; @cravottaEffectsEncouragingUse2019; @pouwAcousticSpecificationUpper2019; @pouwEnergyFlowsGesturespeech2019a]. Specifically, hand gesture-movements can transfer a force onto the musco-skeletal system, modulating respiration-related muscle activity, leading to changes in the Fundamental Frequency (F0) and intensity. It has been found that higher-impetus arm versus wrist movement, or dual gesturing versus one handed gestures, will induce more pronounced effects on F0 and intensity. When people are standing, the effects of peak impetus of gestures are more pronounced as opposed to sitting, as standing involves more forceful anticipatory postural counter adjustments [@cordoPropertiesPosturalAdjustments1982]. Furthermore postural instability requires a higher degree of musco-skeletal tensioning (or pre-stress) which could play as a mechanical contextual modulator for gestures to realize effects on vocalic acoustics. Namely, the force-transmission of peripherical upper limb movements onto more distal activity in the body is possible as posturally stable body is constantly pre-stressed, forming an interconnected tensioned network of compressive (e,g., bones) and tensile elements (e.g., fascia, muscles) through which forces may reverbarate [@turveyMediumHapticPerception2014; @silvaSteadystateStressOne2007]. Recently, more direct evidence has been found for the gesture-respiratory-speech link, where it was shown that respiratory related activity (measured with a resiratory belt) was enhanced during moments of peak-impetus of gesture as opposed to other phases in the gesture movement, and this respiratory related activity itself was related to gesture-related intensity modulations of mono-syllable utterances [@pouwEnergyFlowsGesturespeech2019a].  
+  The implication of a gesture-speech physics is that there is a bio-morphological driver for gesture and speech to synchronize on the level of prosody. This could have several implications fo current theory on gesture and speech. Cognitively, the supposed timing mechanism that is neurally instantiated to couple excursions in F0 and intensity with moments of kinematic expression in gestures is cognitively simplified, as F0 and intensity levels can emerge from bio-physics the body. Note though, that any biophysical effect of gesture on speech may be counteracted, not exploited, or further intensified given the intentional prosodic targets the speaker may have in mind. Thus, to be very clear, gesture-speech physics is not something that *controls* the speaker. Rather, speech is by necessity constrained by gesture physics (when gesturing), and the control of speech needs therefore to take into account such constraints for reaching sensorimotor solutions to prosodic goals. If a prosodic goal is to not stress speech while producing a high-impetus gesture, the speaker must counteract the F0 constraint of gesture. Importantly in this respect, F0 is likely to be more variably affecteed by gesture physics as it is to greater degree constrained by vocal fold tensioning. Indeed, we generally find that intensity of speech is more reliably affected by gesture physics than F0 [@pouwGesturespeechPhysicsBiomechanical2019;@pouwEnergyFlowsGesturespeech2019a].  
+  An account of gesture-speech physics does not deny that intentional control over gesture-speech dynamics is something that newborns lack. It may indeed be fully instantiated only after 16 months of age [@iversonHandMouthBrain2005]. Gesture-speech physics does entail however that constrains of upper limb movement on vocalization are present at birth. It is well known that infants produce concurrent vocal motor babblings, and improvement of rhythmiticity or increased frequency of motor babbling predicts speech-like maturation of vocalization [@ejiriRelationshipRhythmicBehavior1998; @ejiriCooccurencesPreverbalVocal2001]. Gesture-speech physics revises current accounts such that, rather than a primarily neural development that instantiates gesture-speech synchrony [@iversonHandMouthBrain2005], it is the discovery of gesture-speech physics during random-like vocal-motor babblings that provides the basis for infants to develop stable sensorimotor solutions such as a synchronized pointing gesture with a vocalization. It is likley that such sensorimotor solutions are of course solicited and practiced through support of caretakers, yet without the biomorphological background gesture-speech synchrony does not naturally emerge.  
+  Finally, gesture-speech physics has promise for a revision of our understanding for the emergence of communicative gesture in modern humans. Namely, instead of forefronting the depiction and referential function of gesture as the driver for its modern day instantiation [@tomaselloOriginsHumanCommunication2008; @kendonReflectionsGesturefirstHypothesis2017; @frohlichMultimodalCommunicationLanguage2019], it should be considered that peripheral body movements may have served as a control parameter of an under-evolved vocal system. It has already been proposed that vocal system must have been evolutionarily exapted from rhythmic abilities in the loco-motor domain [@ravignaniRhythmSpeechAnimal2019; @larssonBipedalStepsDevelopment2019], and upper limb movements as constraining the vocal systems could be included in this view. Additionally, gesure-speech physics is comparable to the cross-species phenomenon. Chest-beating gorrillas do sometimes vocalize at the same time and even without vocalization they exploit body morphology (resonances in the lung cavities) to produce chest-beating sounds. Vocalization acoustics of flying bats are synchronized with their wing beats [@lancasterRespiratoryMuscleActivity1995]. Oranguatangs modulate vocalization F0 by cupping their hands in front of their mouth [@hardusToolUseWild2009]. Further, it is well known that animals are sensitive to body-related information in sound in that body size and strength can be detected from vocalizations alone [@pisanskiVoiceModulationWindow2016; @ghazanfarVocaltractResonancesIndexical2007], and humans are able to do this with some accuracy as well [@pisanskiReturnOzVoice2014], even when they are blind from birth [@pisanskiCanBlindPersons2016]. Interestingly, in a recent experiment we have found that listeners are exquisitly sensitive to gesture-moduled acoustics as they can synchronize their own upper limb movement by listening to a vocalizer producing a steady-state vocalization while rhythmically moving her wrist or arm [@pouwSocialResonanceAcoustic2019; @pouwAcousticSpecificationUpper2019]. Thus it might be that gestures did not only emerge as tools for visual communication, but as tools for vocal communication too.
+
+## Current experiment  
+  We have argued that gesture-speech physics may hold  promising revisions of current understanding of cognitive, ontogenetic and phylogenetic orgins of gesture-speech production. Yet, the evidence reviewed so far have been based on experiments on continuous vocalizations or mono-syllabic utterances. Such results cannot directly generalize to fluid full-sentenced speech. There are promising indications that gesture-speech physics does generalize to fluid speech. In a recent study it was found that encouraging participants to gesture during cartoon-narration versus giving no instructions lead to 22Hz increase in observation of max F0, and lead to greater F0 ranges of speech and intensity [@cravottaEffectsEncouragingUse2019]. Furthermore, computational modelers have reported on interesting sucesses of synthesizing gesture kinematics based on speech acoustics alone [@ginosarLearningIndividualStyles2019; @kucherenkoAnalyzingInputOutput2019], indicating that information about body movements inhabits the speech signal. Although promising, these results can still be obtained if gesture are primarily neurally coupled, with little role for biomechanics.  
+    The current experiment was conducted as a simple test of the constraints of upper limb movement on fluid speech speech acoustics. Participants were asked to retell a cartoon scene that they had just watched, while either not moving, vertically moving their wrist, or vertically moving their arm at a tempo of 80 beats per minute (1.33Hz). Participants were asked to give a stress or beat in the downward motion with a sudden stop at maximum extension. Similar to previous experiments, we assessed the following to conclude that gesture-speech physics is present:  
+The following research questions will be examined:  
+* 1) Does rhythmic co-speech movements change acoustic markers of prosody (F0 and amplitude envelope)?  
+* 2) At what moments of co-speech movements is change in acoustics observed?  
+* 3) Does degree of physical impetus (changes in speed), predict acoustic variation?
+
+\pagebreak 
+# Method
+
+## Participants & Design
+  We have tested a total of `r printnum(length(meta$PPN))` participants (*M* age = `r printnum(mean(meta$AGE))`, *SD* age = `r printnum(sd(meta$AGE))`, %cis-gender female = `r printnum( round(sum(meta$GENDER == "FEMALE")/length(meta$PPN)*100, 2) )`, %cis-gender male = `r printnum( round(sum(meta$GENDER == "MALE")/length(meta$PPN)*100, 2) )`, %right-handed = `r printnum( round(sum(meta$Handedness == "R")/length(meta$PPN)*100, 2) )`), drawn from an undergraduate participant pool at the University of Connecticut. There were `r printnum(sum(meta$N_NATIVE == "Asian"))` non-native English speaking Asian-undergraduates in the current sample.  
+  The current design fully-within subject, with a three-level Movement condition (Passive Vs. Wrist Vs. Arm condition). Importantly, we have added another artificial condition to our analysis which we will refer to as "Passive (Falsely Paired). For this surrogate condition speech of a Passive condition trial was randomly paired (wihout scrambling the order)  with motion-tracking data from a movement condition for that participant. This surrogate condition will allow use to exclude the possibility that any effects of movement are due to chance coupling inherent to the structure of speech and movement. We will only use this surrogate control condition as a contrast when we are performing analysis on the temporal relation between speech and movement.
+  Participants performed `r printnum(length(unique(fd$unique_trial)))` trials in total lasting about 40 seconds with Movement condition randomly assigned per trial. The study design was approved by the IRB committee of the University of Connecticut (#H18-227).
+
+## Material & Equipment
+
+### Cartoon scenes   
+Twelve cartoon scenes were created from the "Canary Row" and "Snow Business" Tweety and Sylvester cartoons, *M* duration scenes = `r printnum(mean(cartoon_duration_s))`seconds (*SD* = `r printnum(sd(cartoon_duration_s))`). For videos see https://osf.io/rfj5x/.
+
+### Audio and Motion Tracking   
+A cardioid condenser microphone headset MicroMic C520 (AKG, Inc.) was used to record audio. A Polhemus Liberty motion tracking system (Polhemus, Inc.) was used, sampling with one 6D sensor at 240Hz. We applied a first order Butterworth filter at 30Hz for the vertical position (z) traces and its derivatives. 
+
+## Procedure  
+  Upon arrival participants were briefed that this 30-minute experiments entailed retelling cartoon scenes while standing and performing upper limb movements. A motion sensor was attached to the tip of the index finger of the dominant hand, and a microphone headset was put on. Participants were asked to stand upright and were introduced to three movement conditions (see Figure 1). In the Passive Condition, participants did not move and kept their arm resting alongside the body. In the Wrist Movement Condition participants were asked to continuously vertically move the hand at the wrist joint while keeping the elbow joint in 90 degrees. In the Arm Movement Condition, participants moved their arm at the elbow joint, without wrist movement. Similar to previous studies, participants were asked to give emphasis in the downward motion of the movement with a sudden halt, in other words a a beat, at the maximum extension of their movement.
+  After introduction of the movement condition, participants were told they were to move at a particular tempo which was indicated by visual feedback system which showing a horizontal bar that adjusted real time to the participants current movement speed. The participant were to keep the horizontal bar between two low and higher boundaries (a 20% region, [72-88]BPM) of the target tempo which was set at 1.33Hz (i.e., 80 BPM). Participants briefly practiced moving at the target rate.  
+  Subsequently, participants were instructed that they would watch cartoon clips which they would retell after having watched it, while at the same time making one of the instructed movements (or making no movements). Participants were asked to keep their speech as normal as possible while making the movements (or no movement). When moving while speaking, participants were to keep their movement tempo within the target range.
+  Twelve cartoon scenes were readied to be shown before each trial, but if the total experiment time exceeded 30 minutes the experiment would be terminated wihout all scenes being retold. To ensure that all conditions would be performed at least once within that time we set the maximum time per trial at 1 minute, such that when participants were still retelling after 60 seconds the experimenter would terminate the trial and move to the next.
+
+Figure 1. Graphical overview of movement conditions
+```{r method_stance_pic, echo = FALSE,warning=FALSE, fig.align = 'center', fig.height= 4}
+library(raster)  
+mypng <- stack(paste0(parentfolder, "/images/FigureStanceMethod.png"))  
+plotRGB(mypng,maxpixels=1e300)  
+
+```
+*Note*. Movement conditions are shown. Each participants performed all conditions (i.e., within-subjects). To ensure that movement tempo remained relatively constant participants were shown a moving green bar which indicated whether they moved to fast or to slow relative to a 20% target region of 1.33Hz. Participants were instructed to have a emphasis in the downbeat with a abrupt stop (i.e., beat) at the maximum extension.
+
+## Preprocessing  
+### Speech acoustics
+The Fundamental Frequency was extracted with gender-appropriate preset ranges (male = 50-400Hz, female = 80-640Hz). We used a previously written [@pouwMaterialsTutorialGespin20192019] R-script (https://osf.io/m43qy/) utilizing R-package 'wrassp' [@winkelmannWrasspInterfaceASSP2018] which applies a K. Schaefer-Vincent algorithm. We also extracted a smoothed (5Hz hanning window) amplitude envelope using a previously written custom-written R script (https://osf.io/uvkj6/, which reimplements in R a procedure from @heAmplitudeEnvelopeKinematics2017a.  
+
+### Data and Exclusions
+  Due to a c++ coding error the precise timing data for the motion-tracking was partially lost. This was caused by an incorrect memory allocation for a 7- instead of 8-digit vector in the c++ experiment code. This resulted in losing track of the tracking system's time above 1.000.000 milliseconds (16 min and 40 seconds). Thus the motion tracking data after 16m40s had to be excluded. Interpolation of missing time points for the remaining data was considered, but this will inevatably lead to temporal innacuracies as sampling rate of the recording system is never perfectly constant at 240Hz (as such a continuous time-keeping is needed). Thus if we only look at speech we will have access to all data, meaning `r printnum( round( nrow(fd)*(1/240)/60,2) )` minutes of continous data (Passive = `r printnum( round( nrow(fd[fd$condition == "PASSIVE",])*(1/240)/60,2) )`,  Wrist Movement = `r printnum( round( nrow(fd[fd$condition == "WRIST",])*(1/240)/60,2) )`, Arm Movement = `r printnum( round( nrow(fd[fd$condition == "ARM",])*(1/240)/60,2) )`). For analysis including kinematics, we have access to `r printnum( round( nrow(fd[is.na(fd$EXCLUDE),])*(1/240)/60,2) )` minutes of continuous speech data (Passive = `r printnum( round( nrow(fd[is.na(fd$EXCLUDE) & fd$condition == "PASSIVE",])*(1/240)/60,2) )`, Wrist Movement =  `r printnum( round( nrow(fd[is.na(fd$EXCLUDE) & fd$condition == "WRIST",])*(1/240)/60,2) )`, Arm Movement = `r printnum( round( nrow(fd[is.na(fd$EXCLUDE) & fd$condition == "ARM",])*(1/240)/60,2) )`).
+
+## Manipulation Checks  
+   The following measures we computed as a way to check whether our movement manipulation was successful, and whether speech rates were comparable for conditions. Figure 2 shows a summary of the results for key manipulation check measures.  
+   
+### Movement Frequency  
+  To ascertain if participants were indeed moving their limbs within the target range of 1.33Hz we performed a wavelet-based analysis with R-package 'WaveletComp' [@roschWaveletCompGuidedTour2014], whereby we assessed for each time step which frequency had the highest estimated power (please see our processing script on OSF for further details). Figure 3. shows an example of the wavelet analysis, whereby faster osscilations indeed shower higher frequency estimates for that moment during the trial. It can be seen from Figure 2. that wrist movements were slightly performed at faster rates, *M* = `r printnum( mean( fd$dom_hz_mov[is.na(fd$EXCLUDE) & fd$condition == "WRIST"], na.rm = TRUE))` Hz, *SD* = `r printnum( sd( fd$dom_hz_mov[is.na(fd$EXCLUDE) & fd$condition == "WRIST"], na.rm = TRUE))`, than arm movements, *M* = `r printnum( mean( fd$dom_hz_mov[is.na(fd$EXCLUDE) & fd$condition == "ARM"], na.rm = TRUE))` Hz, *SD* = `r printnum( sd( fd$dom_hz_mov[is.na(fd$EXCLUDE) & fd$condition == "ARM"], na.rm = TRUE))`, but in both cases the movements were distributed over the range 1.33Hz. This confirms that our movement manipulation was succesful. Note further that for our surrogate control condition Passive (Falsely Paired) the mean frequency of the false movement time series was in between both Arm and Wrist movement frequency distributions, *M* = `r printnum( mean( fd$dom_hz_mov[is.na(fd$EXCLUDE) & fd$condition == "PASSIVE"], na.rm = TRUE))` Hz, *SD* = `r printnum( sd( fd$dom_hz_mov[is.na(fd$EXCLUDE) & fd$condition == "PASSIVE"], na.rm = TRUE))`. 
+
+```{r speech info, echo=FALSE, message=FALSE, warning=FALSE, results='hide', output = FALSE}
+#get vocalization cycles
+time_p <- NA    #initizalize a temporary variable
+time_p <- ave(fd$ENV, fd$unique_vocalization, FUN= function(x) max(x, na.rm = TRUE))#extract highest amplitude observation observed during a vocalization
+time_p <- ifelse(is.na(fd$unique_vocalization), NA, time_p) #if there is NA vocalization ENVELOPE max shoudl be ignroed
+fd$time_peak <- ifelse(time_p!=fd$ENV, NA, fd$time_ms_rec)  #insetead of the amplitude fill in the time of that max amplitude
+fd$time_peak[!is.na(fd$time_peak)] <- ave(fd$time_peak[!is.na(fd$time_peak)], 
+                                          fd$unique_trial[!is.na(fd$time_peak)], 
+                                          FUN = function(x) c(0, diff(x)) ) #now for each trial get the difference of these timings
+fd$time_peak <- ifelse(fd$time_peak == 0, NA, fd$time_peak) #only consider differences that are nonzero (this ignores the first                                                                 difference observations)
+fd$time_peak <- 1000/fd$time_peak #get occurent Hz by dividing it by 1 seconds (i.e., 1000 milliseconds)
+
+#get average vocalization duration
+time_p <- NA    #re-initizalize a temporary variable
+fd$time_voc <- ave(fd$time_ms_rec, fd$unique_vocalization, FUN= function(x) max(x, na.rm = TRUE)-min(x, na.rm = TRUE)) #get for each unique vocalization its begin and end time, substract and be left with time of the vocalization
+fd$time_voc <- ifelse(is.na(fd$unique_vocalization), NA, fd$time_voc) #only keep vocalization time for when vocalization != NA
+fd$time_peak <- ifelse(is.finite(fd$time_voc), NA, fd$time_voc)             #ignore infinites that are produced for our missing timing data
+fd$time_voc <- 1000/fd$time_voc                                       #make variable into Hz
+
+rm(time_p) #remove temporary variable
+```
+### Speech Rate  
+  For the current report we are interested in speech acoustics, and we will not go into a finegrained analysis of possible temporal changes of speech produced under rhythmic movement. However we have calculated two measures to provide an indication of speech rate (see Figure 2 for examples), namely vocalization duration and vocalization interval. Figure 3 shows relatively uniform distributions for speech measures, and thus no clear one-to-one frequency couplings of movement and vocalization duration/vocalization interval, or any other clear signs of polyrhythmic coupling of movement and speech as has been observed in basic tapping paradigms [@zelicArticulatoryConstraintsSpontaneous2015].  
+  We have computed the average vocalization duration for each trail by tracking the time of uninterrupted runs of F0 observations, and converted the time in milliseconds to Hz (cycles per second) so as to compare this measure to the the movement frequency distributions. For the Passive condition the average vocalization duration was *M* = `r printnum( mean( fd$time_voc[fd$condition == "PASSIVE"], na.rm = TRUE))` Hz (i.e., 250ms), *SD* = `r printnum( sd( fd$time_voc[fd$condition == "PASSIVE"], na.rm = TRUE))`. For the Wrist condition the vocalization duration was *M* = `r printnum( mean( fd$time_voc[fd$condition == "WRIST"], na.rm = TRUE))` Hz (i.e., 1000/3.99 = 250ms), *SD* = `r printnum( sd( fd$time_voc[fd$condition == "WRIST"], na.rm = TRUE))`, and for the Arm condition *M* = `r printnum( mean( fd$time_voc[fd$condition == "ARM"], na.rm = TRUE))` Hz (i.e., 250ms), *SD* = `r printnum( sd( fd$time_voc[fd$condition == "ARM"], na.rm = TRUE))`.  
+  The average vocalization interval for the Passive condition was *M* = `r printnum( mean( fd$time_peak[fd$condition == "PASSIVE"], na.rm = TRUE))` Hz (i.e., 250ms), *SD* = `r printnum( sd( fd$time_peak[fd$condition == "PASSIVE"], na.rm = TRUE))`. For the Wrist condition the vocalization interval was *M* = `r printnum( mean( fd$time_peak[fd$condition == "WRIST"], na.rm = TRUE))` Hz, *SD* = `r printnum( sd( fd$time_peak[fd$condition == "WRIST"], na.rm = TRUE))`, and for the Arm condition *M* = `r printnum( mean( fd$time_peak[fd$condition == "ARM"], na.rm = TRUE))` Hz, *SD* = `r printnum( sd( fd$time_peak[fd$condition == "ARM"], na.rm = TRUE))`.
+
+```{r example_time_series_code, echo=FALSE,warning = FALSE, message = FALSE, output = FALSE, results = 'hide'}
+#make an example time series with acoustic and motion data
+sample <- fd[fd$ppn == "31" & fd$trial == 4,]                 #pick a trial
+sample$time <- sample$time_ms_rec-min(sample$time_ms_rec)     #start the trial at 0 time 
+sample <- sample[sample$time > 15000 & sample$time < 22000,]  #collect this bit of the data as corresponding to the waveform
+sample$F0 <- ifelse(sample$F0 == 0, NA, sample$F0)            #for plotting F0;s should be given NA instead of 0's when vocalization is absent      
+sample$time <- sample$time-min(sample$time)                   #start this sample of the trial at 0 time
+  
+#make plots, combine them with grid.arrange (which was later exported for some extra editing)
+a <- ggplot(sample, aes(x= time)) + geom_line(aes(y = ENV), color = "purple", size= 1.3) + geom_line(aes(y = rescale(z_mov, c(0.8, 1.3)) )) + bluetheme + ylim( -0.3, 1.35)+ theme(axis.text.y = element_text(face = "bold", color="purple"))+ theme(axis.title.x=element_blank())
+b <- ggplot(sample, aes(x= time)) + geom_line(aes(y = F0), color = "red", size = 0.8)+ geom_line(aes(y = rescale(z_mov, c(160, 220)))) + bluetheme + ylim(50, 250) + theme(axis.text.y = element_text(face = "bold", color="red"))+ theme(axis.title.x=element_blank())
+c <- ggplot(sample, aes(x= time)) + geom_line(aes(y = dom_hz_mov), color = "cyan3", size = 1.3)+ geom_line(aes(y = rescale(z_mov, c(1.2, 1.4)))) + bluetheme + ylab("wavelet estimate frequency (Hz) ") + theme(axis.text.y = element_text(face = "bold", color="cyan3"))+ xlab("time in milliseconds")
+#grid.arrange(a,b,c, nrow =3) # this is the figure that we further edited and is called next
+```
+
+Figure 2. Example movement-, amplitude envelope-, F0- time series, and time-dependent movement frequency estimates
+```{r plot_example_time_series, fig.height= 5}
+#load in the finally edited time series example
+mypng <- stack(paste0(parentfolder, "/images/FigureTimeSeriesExample.png"))  
+plotRGB(mypng,maxpixels=1e500000)
+```
+
+*Note figure 2.* A sample of data of about 10 seconds is shown. With the participant's permission the speech sample is available at https://osf.io/2qbc6/. The amplitude envelope in purple traces smoothly the waveform maxima's. The F0 traces show the concomittant vocalizations in Hz, with an example of vocalization interval and vocalization duration (which was calcuated for all vocalizations). The bottom panel shows the continously estimated movement frequency in cyan, which hovers nicely around 1.33 Hz. In all these panels the co-occuring movement is plotted in arbitrary units (a.u.) so as see the temporal relation of movement phases and the amplitude envelope, F0, and the movement frequency estimate. Not that in our upcoming analysis we refer to the maximum extension and decelerration phases as relevant moments for speech modulations. In this example there is a particulary dramatic acoustic excursion during a moment of deceleration of the arm movement, possibly an example of gesture-speech physics.
+
+Figure 3. Summary of movement-frequency, vocalization duration and vocalization interval
+
+```{r manipulation_checkplot, echo=FALSE, message=FALSE, warning=FALSE, results='hide', cache = TRUE,fig.width=5, figure.heigth = 8}
+#get average vocalization cycle
+dd <- fd #exclude data
+dd$condition2 <- ifelse(dd$condition == "PASSIVE", "PASSIVE (FALSELY PAIRED)", 
+                        as.character(dd$condition)) #rename the passive condition to False Pair for assessing vocal-motor coupling
+dd$condition2 <- factor(dd$condition2, levels = c("PASSIVE (FALSELY PAIRED)", "WRIST", "ARM")) #reorder the levels
+
+#plot relevant summary data for the vocalization cycles (time_peak), and vocalizaiton duration (time_voc)
+a <- ggplot(dd[is.na(dd$EXCLUDE),], aes(x = dom_hz_mov)) + geom_density()+bluetheme + facet_grid(.~condition2)+ xlim(0.1,3)+ geom_vline(xintercept = 1.33, color = "red", size= 0.4) + xlab("movement frequency (Hz)")+ theme(strip.text.x = element_text(size = 7))
+b <- ggplot(dd, aes(x = time_peak)) + geom_density()+bluetheme + facet_grid(.~condition)+ geom_vline(xintercept = 1.33, color = "red", size= 0.4) +xlim(0.1, 6) + xlab("vocalization interval (Hz)")+ theme(strip.text.x = element_text(size = 7))
+c <- ggplot(dd[!duplicated(dd$unique_vocalization),], aes(x = time_voc)) + geom_density()+bluetheme + facet_grid(.~condition)+ geom_vline(xintercept = 1.33, color = "red", size= 0.4) +xlim(0.1, 6) + xlab("vocalization duration (Hz)") + theme(strip.text.x = element_text(size = 7))
+
+grid.arrange(a,b,c,nrow = 3)
+```
+*Note Figure 3*. Density distributions of movement frequencies, vocalization interval, and vocalization duration are shown. Note, that for the Passive condition there was no movement, but we have falsely paired movement time series for the Passive (Falsely Paired) condition for which frequency information is shown. The red vertical line indicates the target movement frequency at 1.3Hz.
+
+# Results
+
+## Overview analysis  
+  We will report three main analysis to show that gesture-speech physics is present. Firstly, we will assess whether there are overall effects on movement condition on vocalization acoustics (F0 and the amplitude envelope). Secondly, we assess whether vocalization acoustic modulations are observed at particular phases of the movement condition.   Thirdly, we assess whether continous estimate of upper limb forces produced, predicts vocalization acoustic peaks.  
+  The following generally applies to all analysis: For hypothesis testing we performed mixed linear regression models with R-package 'nlme' [@pinheiroNlmeLinearNonlinear2019], or non-linear generalized additive modeling (GAM) with R-package 'gam' [@hastieGamGeneralizedAdditive2019] with random intercept for participants. If random slopes for any of the analysis converged as well we wil report so.  
+  
+## Acousic correlates of movement condition    
+  Figure 4 shows the average F0 and Amplitude Envelope (z-scaled for participants) per trial per condition. It can be seen that the Passive condition had generally lower levels of F0 and Amplitude Envelope as compared to the movement conditions. Furthermore, the higher-impetus Arm condition generally had higher levels of F0 and Amplitude envelope as compared to lower-impetus Wrist condition.  
+  Table 1 shows the results of mixed linear regression analysis. For the amplitude envelope,Passive condition had a lower average amplitude envelope as compared to the the Wrist condition (*p* < .05), as well as the Arm condition (*p* < .0001). We further obtain that after accounting for differences in F0 for gender (males had generally 73Hz lower F0), Wrist Movement condition has about 1.4 Hz increase in average (*p* < .05) as compared to Passive condition. Further, the Arm movement condition had 3.2 Hz increase in F0 over the Passive Condition (*p* < .0001).  
+  
+Figure 4. Average F0 and Amplitude Envelope per trial per condition.
+
+```{r plot_avF0_avENV, echo=FALSE, message = FALSE, warning = FALSE, cache = TRUE, fig.width=5}
+#average acoustics plots
+    #average F0 per trial
+fd$av_f0 <- ave(fd$F0z, fd$unique_trial, FUN = function(x) mean(x, na.rm = TRUE)) #get the average F0
+  #plot F0
+a <- ggplot(fd[!duplicated(fd$av_f0),], aes(x = condition, y = av_f0)) + geom_violin(color = "red", alpha = 0.6) + 
+  geom_boxplot(alpha = 0.2) +  geom_beeswarm(priority='density',cex=1.0, size= 0.4) + ylab("average F0 per trial (z-scaled per participant)") + xlab("condition") + ggtitle("Vocalization F0") + bluetheme
+
+#average Amplitude vocalization per trial
+  #note here that we take the amplitude during a vocalization (i.e., when F0 is observed) thereby ignoring voiceless consonents
+fd$av_ENV[!is.na(fd$F0z)] <- ave(fd$ENVz[!is.na(fd$F0z)], fd$unique_trial[!is.na(fd$F0z)], FUN = function(x) mean(x, na.rm = TRUE))
+  #plot ENV
+b <- ggplot(fd[!duplicated(fd$av_ENV),], aes(x = condition, y = av_ENV)) + geom_violin(color= "purple", alpha = 0.6) + 
+  geom_boxplot(alpha = 0.2) +  geom_beeswarm(priority='density',cex=1.0, size= 0.4) + ylab("average ENV per trial (z-scaled per participant)") + xlab("condition") + ggtitle("Vocalization ENV") + bluetheme
+
+grid.arrange(b,a, nrow=1)
+
+```
+
+*Note Figure 4*. Violin and box plots are shown for average F0 (Hz) and amplitude envelope (z-scaled) per trial (jitters show observation).
+
+```{r model_differences_absolute, output= FALSE, message = FALSE, warning = FALSE, results='hide'}
+#compute statistics for unscaled F0 within participants
+
+#effect condition F0
+dd <- fd              #convert to data to a temporary dataset for this analysis
+dd$F0 <- ifelse(dd$F0 == 0, NA, dd$F0) #make NA when F0 is not observed (i.e., 0) thereby non-vocal. not affecting our analysis
+fd$av_f0 <- ave(dd$F0, fd$unique_trial, FUN = function(x) mean(x, na.rm = TRUE)) #get the mean F0 per trial
+lmdat <- fd[!duplicated(fd$unique_trial),]  #only keep one unique trial, thereby also keeping one mean F0 observation per trial     #run models                                
+model1f <- lme(av_f0~gender+condition, data = lmdat, random = ~1|ppn, method = "ML", na.action = na.exclude)
+    #random slopes for condition did not converge
+#model1fran <- lme(av_f0~gender+condition, data = lmdat, random = ~condition|ppn, method = "ML", na.action = na.exclude) 
+cmod1f <- coef(summary(model1f)) #collect summary information of the f model
+
+#effect condition ENV
+dd <- fd            #convert to data to a temporary dataset for this analysis
+fd$av_ENV[!is.na(fd$F0z)] <- ave(fd$ENVz[!is.na(fd$F0z)], fd$unique_trial[!is.na(fd$F0z)], FUN = function(x) mean(x, na.rm = TRUE))
+lmdat <- fd[!duplicated(fd$av_ENV),]
+model1e <- lme(av_ENV~condition, data = lmdat, random = ~1|ppn, method = "ML", na.action = na.exclude)
+    #random slopes for condition did not converge
+  #model1eran <- lme(av_ENV~gender+condition, data = lmdat, random = ~condition|ppn, method = "ML", na.action = na.exclude)
+cmod1e <- coef(summary(model1e)) #collect summary information of the e model
+
+```
+\pagebreak
+Table 1. Linear mixed effects for effects of condition on F0 and Amplitude envelope
+
+```{r tablesmean1, warning = FALSE, echo = FALSE,fig.width=6}
+#make tables
+tm <- cbind(contrast =  c("intercept", "Wrist vs. Passive", "Arm vs. Passive"," ",
+                   "intercept", "Male vs. Female", "Wrist vs. Passive", "Arm vs. Passive"), b = c(round(cmod1e[,"Value"],3),"",round(cmod1f[,"Value"],3)), 
+                                                    SE = c( round(cmod1e[,"Std.Error"],3),"", round(cmod1f[,"Std.Error"],3)),
+                                                    df = c(round(cmod1e[,"DF"],0)," ", round(cmod1f[,"DF"],0)),
+                                                    p = c(round(cmod1e[,"p-value"],4),"", round(cmod1f[,"p-value"],4)))
+rownames(tm) <- c("ENV (z-scaled)", "", ""," ",
+                   "F0 (Hz)", "", "", "")
+tm[,5] <- ifelse(tm[,5] == 0, "< .0001", tm[,5])
+# at most 4 decimal places
+knitr::kable(tm, digits = 3, align = "c", booktabs = T)
+```
+
+
+## Coupling of vocalization duration and movement  
+  Having ascertained in the previous analysis that there seem to be acoustic modulations for movement versus no movement, we further need to confirm that such modulations occur at particular moments. Namely, we have previously obtained that acoustic effects arise at moments around the maximum extension where the most forceful changes in speed (i.e., deceleration/acceleration) are observed.   
+  Figure 5 shows the main results. It can be seen that just before the moment of maximum extension that there is a clear peak in the observed amplitude envelope, most dramatically for Arm condition, but also present for the Wrist condition. For falsely paired movement and passive condition speech this was not the case, excluding mere chance occurences. For F0 more complex patterns are shown, but still with positive peaks just before the maximum extension. This nicely replicates our earlier work on steady-state vocalization, showing that at moments of peak deceleration there are observed peaks in acoustics [@pouwGesturespeechPhysicsBiomechanical2019].  
+  To formally test that trajectories are indeed non-linear and are reliably different from the passive condition, we performed GAM, a type of non-linear mixed effects procedure. We assessed the average trajectory of acoustics around 800 milliseconds of the maximum extension of the mvoement. We chose 800 milliseconds as this is about the time for a 1.3Hz cycle. The model results with random slopes and intercept for participant are shown in table 2. Firstly, for all models tests for non-linearity of the trajectories were statistically reliable (*p*'s < .0001). As shown in Table 2 our results replicate the general finding that Wrist movements lead to reliably different non-linear peaks in acoustics as compared to the passive condition (*p* < .0001), and this effect is even more extreme for the Arm movement condition (*p* < .0001). Figure 6 provides the fitted trajectories for the GAM models.  
+  For readers interested in individual differences in trajectories, we have uploaded an interactive graph where each participant's average Amplitude Envelope trajectories can be inspected (https://osf.io/a423h/), as well for F0 trajectories (https://osf.io/fdzwj/).  
+\pagebreak
+Figure 5. Average observed vocalization acoustics relative to the moment of maximum extension  
+```{r movementplot_avF0_avENV, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE,fig.height=8}
+dd <- fd[is.na(fd$EXCLUDE),]  #make a temporary dataset for this analysis
+dd$dist <- -(dd$filled_z_min-dd$time_ms_rec)      #get the time relative to the maximum extension (i.e., z_min)
+dd$ENVz <- ifelse(is.na(dd$F0z), NA, dd$ENVz)     #only keep amplitude reading when there is a vocalization
+#The next repeated procedure averages for each observation (F0z, ENVz etc.), what the average reading was for distance from maximum extension, for each condition and each participant seperately
+dd$averageF0 <- ave(dd$F0z, dd$dist, dd$condition, dd$ppn, FUN = function(x) mean(x, na.rm = TRUE))   
+dd$averageENV <- ave(dd$ENVz, dd$dist, dd$condition, dd$ppn, FUN = function(x) mean(x, na.rm = TRUE)) 
+dd$acc <- ave(dd$z_mov, dd$unique_trial, FUN = function(x) -1*scale(c(0,0,diff(diff(x)))))
+dd$averagedecc <- scale(ave(dd$acc, dd$dist, dd$condition, dd$ppn, FUN = function(x) mean(x, na.rm = TRUE)) )
+dd$averagv <-     scale(ave(dd$v, dd$dist, dd$condition, dd$ppn, FUN = function(x) mean(x, na.rm = TRUE))) 
+dd$averagez <-    scale(ave(dd$z_mov, dd$dist, dd$condition, dd$ppn, FUN = function(x) mean(x, na.rm = TRUE)))
+
+dn <- dd[!duplicated(paste0(dd$condition, dd$dist, dd$ppn)),] #keep only unique averaged trajectories, by only keeping one row per paticipant, distance from z_min and ppn
+
+dn1 <- dn #make another temporary dataset for plotting results
+dn1$condition <- ifelse(dn1$condition == "PASSIVE", "PASSIVE (FALSELY PAIRED)", as.character(dn1$condition))
+dn1$condition <- factor(dn1$condition, levels = c("PASSIVE (FALSELY PAIRED)", "WRIST", "ARM"))
+
+#plot the average Envelope per distance
+a <- ggplot(dn1, aes(x = dist, y = averageENV)) + geom_smooth(color = "purple") +
+  facet_grid(.~condition) + xlim(-400, 400) + theme_bw() + ggtitle("Vocalization Amplitude") + ylab("time from maximum extension")+
+  geom_vline(xintercept = 0, linetype = "dashed") + bluetheme + theme(axis.text.x = element_text(face="bold", 
+                            angle=45))+ geom_vline(xintercept =-100, color= "blue", linetype = "dashed")+ labs(x=NULL) +ylab("z-scaled ENV")
+
+#plot the average F0 per distance
+b <- ggplot(dn1, aes(x = dist, y = averageF0)) + geom_smooth(color = "red") +
+  facet_grid(.~condition) + xlim(-400, 400) + theme_bw() + ggtitle("Vocalization F0") + ylab("time from maximum extension")+
+  geom_vline(xintercept = 0, linetype = "dashed") + bluetheme+ theme(axis.text.x = element_text(face="bold", 
+                            angle=45))+ geom_vline(xintercept =-100, color= "blue", linetype = "dashed") + labs(x=NULL)+ylab("z-scaled F0")
+
+#plot the average acceleration per distance
+c <- ggplot(dn[dn$condition != "PASSIVE",], aes(x = dist)) + 
+  geom_smooth(aes(y = averagedecc), color = "blue", size = 2) +
+   geom_smooth(aes(y = averagez), color = "black", size = 2) +
+  facet_grid(.~condition) + xlim(-400, 400) + theme_bw() + ggtitle("Vertical position and accelaration") + ylab("time from maximum extension")+  geom_vline(xintercept = 0, linetype = "dashed") + bluetheme + theme(axis.text.x = element_text(face="bold", 
+                            angle=45)) + geom_vline(xintercept =-100, color= "blue", linetype = "dashed")+
+  xlab("time relative to maximum extension")+ylab("movement (acceleration)")
+
+grid.arrange(a,b,c)
+
+#these plots were generated to provide information about invidividual variation and were put online on the OSF
+extra <- ggplot(dn1, aes(x = dist, y = averageENV, color = as.factor(ppn))) + geom_smooth(size = 0.3, alpha= 0.3) +
+  facet_grid(.~condition) + xlim(-400, 400) + theme_bw() + ggtitle("Vocalization Amplitude") + ylab("time from maximum extension")+
+  geom_vline(xintercept = 0, linetype = "dashed") + bluetheme + theme(axis.text.x = element_text(face="bold", 
+                            angle=45))+ geom_vline(xintercept =-100, color= "blue", linetype = "dashed")+ labs(x=NULL) +ylab("z-scaled ENV")+ ggtitle("individual variation of amplitude envelope trajectories around maximum extension")
+
+extra2 <- ggplot(dn1, aes(x = dist, y = averageF0, color = as.factor(ppn))) + geom_smooth(size = 0.3, alpha= 0.3) +
+  facet_grid(.~condition) + xlim(-400, 400) + theme_bw() + ggtitle("Vocalization Amplitude") + ylab("time from maximum extension")+
+  geom_vline(xintercept = 0, linetype = "dashed") + bluetheme + theme(axis.text.x = element_text(face="bold", 
+                            angle=45))+ geom_vline(xintercept =-100, color= "blue", linetype = "dashed")+ labs(x=NULL) +ylab("z-scaled ENV")+ ggtitle("individual variation of F0 trajectories around maximum extension")
+
+
+```
+
+*Note Figure 5*. For the upper two panels the average acoustic trajectory is shown around the moment of maximum extension (*t* = 0, dashed line). In the lower panel we have plotted the z-scaled average vertical displacement of the hand, and the z-scaled acceleration trace. We have marked with the blue dashed vertical line the moment where the deceleration phase starts, which neatly alligns with peaks in acoustics. 
+
+Figure 6. Fitted trajectories GAM
+```{r table_anddiff, echo=FALSE, message=FALSE, warning=FALSE, results = 'hide'}
+#model differences with respect to temporal distance from z_min by using generalized additive modeling (GAM)
+
+#Keep only data that are roughly within the 1.3Hz cycle, otherwise will give bad estimates as there are too little data points at higher intervals
+CC <- dn[abs(dn$dist) < 400,] #make a temporary subdataset where the absolute temporal distance from max extension is 400 ms
+
+    #PERFORM GAM
+#m1 <- bam(averageENV~ condition + s(dist, by=as.factor(condition)) + s(ppn,bs="re"),data=CC) #we used random slopes as it converged
+m1r <- bam(averageENV~ condition + s(dist, by=as.factor(condition)) + s(ppn,condition, bs="re") + s(ppn, condition, bs = "re"),data=CC)
+mod1 <- summary(m1r) #collect GAM data for average Envelope
+
+#m2 <- bam(averageF0~ gender+condition + s(dist, by=as.factor(condition)) + s(ppn,bs="re"),data=CC) #we used random slopes as it converged
+m2r <- bam(averageF0~ gender+condition + s(dist, by=as.factor(condition)) + s(ppn,condition, bs="re") + s(ppn, condition, bs = "re"),data=CC)
+mod2 <- summary(m2r) #collect GAM data for average F0
+
+#plot the fitted values per condition
+par(mfrow=c(1,2))
+plot_smooth(m1r,view="dist", plot_all="condition",ylab = 'ENV') 
+plot_smooth(m2r,view="dist", plot_all="condition",ylab = 'F0')
+```
+
+Table 2. Model results for GAM analysis
+```{r tables_GAM, echo=FALSE, output = FALSE, message = FALSE}
+tm2 <- cbind(contrast =  c("intercept", "Wrist vs. Passive", "Arm vs. Passive"," ",
+                   "intercept", "Male vs. Female", "Wrist vs. Passive", "Arm vs. Passive"), 
+                                          b = c(round(mod1$p.coeff,3),"",round(mod2$p.coeff,3)), 
+                                          SE = c(  round(mod1$se[1:3], 3),"", round(mod1$se[1:4],3)),
+                                          df = c(round(mod1$p.t,3),"", round(mod2$p.t,3)),
+                                          p = c(round(mod1$p.pv,4),"", round(mod2$p.pv,4)))
+rownames(tm2) <- c("ENV (z-scaled)", "", ""," ",
+                   "F0 (Hz)", "", "", "")
+tm2[,5] <- ifelse(tm2[,5] == 0, "< .0001", tm2[,5])
+knitr::kable(tm2, digits = 3, align = "c", booktabs = T)
+
+```
+
+*Note*. Model results are shown for the ampltiude envelope (z-scaled) and F0 (Hz). For F0 we accounted for differences of gender when estimating independent effects of condition.
+
+## Degree of physical impetus and acoustic peaks  
+  We have confirmed that speech acoustics is modulated around moments of the deceleration phase, about 0-200 ms before the maximum extension. However a further support of gesture-speech physics would entail a demonstration that forces produced by the upper limb movement predict acoustic peaks. Therefore we assessed for all vocalizations that occurred between 200 to 0ms before the maximum extension whether its acoustic peak (maximum F0 or maximum amplitude envelope) was predicted by the maximum deceleration value (i.e, minimum acceleration observation) observed in that 200 millisecond window. In previous research we obtained that higher deceleration were related to higher amplitude envelope observations, but not F0 [@pouwEnergyFlowsGesturespeech2019a].  
+  Figure 7 shows the general pattern of the results for the Wrist and Arm condition. Table 3 shows the results of linear mixed effects model with random intercept and slopes for participants, where we regressed the max observation deceleration onto the co-occuring vocalization acoustic peak, for amplitude envelope and F0 seperately. We observed that higher deceleration was indeed predicting higher amplitude envelope, for both Wrist and Arm movements (*p* < .001). Similar to previous research, for F0 this effect is much more weakly present, and only for the Arm movement condition, as indicated by a statistically reliable interaction between condition and max deceleration effect (*p* < .05).
+
+Figure 7. Relation max deceleration and height acoustic peak
+```{r impact analysis, echo=FALSE, warning = FALSE, message = FALSE}
+
+#for this impact analysis we only do the movement conditions
+dd <- fd[is.na(fd$EXCLUDE) & fd$condition != "PASSIVE",]
+dd$dist <- -(dd$filled_z_min-dd$time_ms_rec) #calculate the temporal distance from maximum extension again
+
+dn <- dd[dd$dist < 0 & dd$dist > -200,] #subset the region around peak deceleration where higer acoustic modulations were found 
+dn$peak_env <- ave(dn$ENVz, dn$unique_vocalization, FUN = function(x) max(x, na.rm = TRUE) ) #get the peak amplitude
+dn$peak_F0  <- ave(dn$F0z, dn$unique_vocalization, FUN = function(x) max(x, na.rm = TRUE) )  #get teh peak in F0
+dn$peak_acc <- ave(dn$acc, dn$unique_vocalization, FUN = function(x) abs(min(x, na.rm = TRUE)) )  #get the peak in deceleration
+
+#plot deceleration and acoustic peaks
+a <- ggplot(dn[!duplicated(dn$unique_vocalization),], aes(x= peak_acc, y = peak_env)) + geom_point(size = 0.025, alpha = 0.5) + geom_smooth(method = "lm", color = "purple") + facet_grid(.~condition) + bluetheme + xlab("max deceleration") + ylab("max ENV (z-scaled)")
+
+b <- ggplot(dn[!duplicated(dn$unique_vocalization),], aes(x= peak_acc, y = peak_F0)) + geom_point(size = 0.025, alpha = 0.5) + geom_smooth(method = "lm", color = "red") + facet_grid(.~condition) + bluetheme + xlab("max deceleration") + ylab("max F0 (z-scaled)")
+
+grid.arrange(a, b, nrow =1)
+
+
+```
+
+*Note Figure 7*. On the x-axis the maximum deceleration is shown (absolutized negative acceleration value), where 0 indicates no deceleration and positive values indicate higher deceration rates in cm/s. It can be seen that deceleration rates are more extreme for the Arm versus the Wrist condition. On the y-axis we have maximum observed amplitude envelope (left panel) and F0 around that moment of deceleration. There is a general trend that higher decelerations are co-occur with higher peaks in acoustics, especially for the amplitude envelope, and especially for the Arm condition.  
+\newpage
+
+Table 4. Linear mixed effects of deceleration and acoustic peaks  
+```{r model_impact, warning= FALSE, message = FALSE}
+#effect condition and peak deceleration on vocalization peak
+lmdat <- dn[!duplicated(dn$unique_vocalization),] #only keep 1 observation per unique vocalization
+model1e <- lme(peak_env~condition+peak_acc, data = lmdat, random = ~peak_acc|ppn, method = "ML", na.action = na.exclude)
+mod1e <- coef(summary(model1e))
+
+model1f <- lme(peak_F0~condition*peak_acc, data = lmdat, random = ~peak_acc|ppn, method = "ML", na.action = na.exclude)
+mod1f <- coef(summary(model1f))
+
+tm3 <- cbind(contrast =  c("Intercept", "Arm vs. Wrist", "Max Deceleration"," ",
+                   "intercept", "Arm vs. Wrist", "Max Deceleration", "Arm x Max Deceleration"), 
+                                          b = c(round(mod1e[,"Value"],3),"",round(mod1f[,"Value"],3)), 
+                                                    SE = c( round(mod1e[,"Std.Error"],3),"", round(mod1f[,"Std.Error"],3)),
+                                                    df = c(round(mod1e[,"DF"],0)," ", round(mod1f[,"DF"],0)),
+                                                    p = c(round(mod1e[,"p-value"],4),"", round(mod1f[,"p-value"],4)))
+rownames(tm3) <- c("ENV (z-scaled)", "", ""," ",
+                   "F0 (z-scaled)", "", "", "")
+tm3[,5] <- ifelse(tm3[,5] == 0, "< .0001", tm3[,5])
+knitr::kable(tm3, digits = 3, align = "c", booktabs = T)
+```
+
+*Note*. We included interaction terms if they were found to be statistically reliable.
+ 
+
+\pagebreak
+# Discussion  
+  The current study concludes on a line of research demonstrating biomechanical effects of gesture onto speech, by replicating effects obtained in steady-state vocalization and mono-syllable utterances in fluid speech. We show that rhythmically moving the wrist or arm, affects vocalization acoustics by heightening F0 and amplitude envelope, as compared to a passive control condition. We further show that acoustic modulations are especially found around moments of the high-impetus beat, i.e., where the movement abruptly decelerates, thereby producing a physical impetus on the body. We finally show that higher deceleration rates of the movement materialize into more extreme acoustic peaks, demonstrating a role for force-transmission from gesture onto speech. In all analysis we observe that higher-impetus arm versus wrist movements affects speech more dramatically.  
+  The current study opens up a line of possible research into understanding how biomechanics are counteracted or exploited depending the speakers intentions and information structure of the utterances. Indeed, it should be noted that gesture-speech physics have only been explicitly tested in situations where participants are instructed to keep their vocalizations or speech as stable as possible. Although a recent study did show that encouraging participants to gesture, without any instruction about how to speak, did lead to modulation of acoustics similar to the current findings [@cravottaEffectsEncouragingUse2019]. In the current study, however, participants are likely to counteract effects of the movements. Future research should therefore focus on how prosodic goals might recruit these biomechanical resources. Indeed, although the movements may have been experienced as a nuisance for participants in the current experiment, we would maintain that gesture-speech physics is a *resource* that can be recruited by an embodied speaker. Prosodic goals, such as producing a pitch accent, can thereby be in part performed by a 'morphological computation' [@zhangVocalDevelopmentMorphological2018], i.e., producing a physical impetus on lower vocal tract via gesturing.  
+  If the current line of research is on track we can conclude that gesture and speech are by biomehanical necessity coupled. This means that when moving the upper limbs this will constrain vocalization acoustics. This by no means entails a non-cognitive or a 'dumb' by-product of our bodies that is cognitively non-negotiable. Rather, biomechanics such as these are providing behavioral stabilities that can be allowed by the speaker to arise, and which would be more complicated to perform by some other sensorimotor solution [@perrierMotorEquivalenceSpeech2015]. We have argued in this respect that cognitively, the biomehechanical coupling of gesture and speech provides a 'smart' mechanism for 'timing' acoustic and movement expressions. With regards to ontogenesis of gesture-speech coupling, we think gesture-speech physics explains how an infant learns to produce multimodal utterances, through the natural discovery of morphological computations during kinesthetic exploration in the form of vocal-motor babbling [@ejiriRelationshipRhythmicBehavior1998].  
+  Phylogenetically, gesture-speech physics may have shaped the evolution of the vocal system in humans and may have been a not-yet considered driver for why gesture and speech are now a ubiqituously exploited sensorimotor coalition in our species. What makes this particular thesis exciting we think, is that all theories on multimodal language evolution have been preoccupied with showing how representational functions of gesture are the primary reason for multimodal language to exist, piggybacking on arguably still hotly debated grounds that such representational gestural capacities are also present in some suffcient proto-form in non-human homonids to explain its current day instantiation [@kendonReflectionsGesturefirstHypothesis2017; @levinsonOriginHumanMultimodal2014; @prieurOriginsGesturesLanguage2019; @corballisHandMouthOrigins2002; @tomaselloOriginsHumanCommunication2008; @frohlichMultimodalCommunicationLanguage2019]. Perhaps then, gesture-speech physics provides another solid primordial basis for the evolution of multimodal behavior, whereby peripheral bodily tensioning naturally formed coalitions with sound-producing organs that were still very much under development. Indeed, this mechanism may be rooted in basic biological principles of miniziming energy expenditure such as in the case of bats using tensioning of wingbeats to drive vocalization [@lancasterRespiratoryMuscleActivity1995], or lung function entraining to walking and arm movement cycles [@amazeenCouplingBreathingMovement]. A particularly needed theoretical enterprise for this radically embodied revision of the origins of multimodal behavior would therefore be to relate multimodal behavior to the wider cross-species literature on bioacoustics, which does seem to show a more widespread existence of embodied innovations for vocal communication similar to the current [@ravignaniRhythmSpeechAnimal2019; @larssonBipedalStepsDevelopment2019; @ghazanfarMultisensoryVocalCommunication2013; @hardusToolUseWild2009; @pouwSocialResonanceAcoustic2019].
+\newpage
+
+# References
+```{r create_references}
+r_refs(file = "r-references.bib")
+r_refs(file = "mybib.bib")
+```
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
