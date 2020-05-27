@@ -1,34 +1,33 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.4)  4 FEB 2020 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.25)  27 JAN 2020 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **GS_physics_in_fluid_speech.tex
 (./GS_physics_in_fluid_speech.tex
-LaTeX2e <2020-02-02>
-L3 programming layer <2020-01-31> (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf
--dist/tex/latex/apa6/apa6.cls
+LaTeX2e <2019-10-01> patch level 3
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/apa6/apa6.cls
 Document Class: apa6 2020/01/13 v2.34 APA formatting (6th edition)
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen134
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
 sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count175
+\etb@tempcnta=\count88
 )
 Class apa6 Info: No bibliography package was specified; defaulting to (but not 
 loading) Biblatex on input line 213.
@@ -67,11 +66,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ) (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/01/25 v2.0m Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-2.
-(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
 sty
@@ -87,26 +85,26 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-\Gm@cnth=\count176
-\Gm@cntv=\count177
-\c@Gm@tempcnt=\count178
-\Gm@bindingoffset=\dimen135
-\Gm@wd@mp=\dimen136
-\Gm@odd@mp=\dimen137
-\Gm@even@mp=\dimen138
-\Gm@layoutwidth=\dimen139
-\Gm@layoutheight=\dimen140
-\Gm@layouthoffset=\dimen141
-\Gm@layoutvoffset=\dimen142
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
 sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
@@ -120,45 +118,45 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 x.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen143
-\Gin@req@width=\dimen144
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
 sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen145
-\lightrulewidth=\dimen146
-\cmidrulewidth=\dimen147
-\belowrulesep=\dimen148
-\belowbottomsep=\dimen149
-\aboverulesep=\dimen150
-\abovetopsep=\dimen151
-\cmidrulesep=\dimen152
-\cmidrulekern=\dimen153
-\defaultaddspace=\dimen154
-\@cmidla=\count179
-\@cmidlb=\count180
-\@aboverulesep=\dimen155
-\@belowrulesep=\dimen156
-\@thisruleclass=\count181
-\@lastruleclass=\count182
-\@thisrulewidth=\dimen157
+\heavyrulewidth=\dimen113
+\lightrulewidth=\dimen114
+\cmidrulewidth=\dimen115
+\belowrulesep=\dimen116
+\belowbottomsep=\dimen117
+\aboverulesep=\dimen118
+\abovetopsep=\dimen119
+\cmidrulesep=\dimen120
+\cmidrulekern=\dimen121
+\defaultaddspace=\dimen122
+\@cmidla=\count92
+\@cmidlb=\count93
+\@aboverulesep=\dimen123
+\@belowrulesep=\dimen124
+\@thisruleclass=\count94
+\@lastruleclass=\count95
+\@thisrulewidth=\dimen125
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/thr
 eeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box45
+\@tempboxb=\box27
 )
-\b@level@one@skip=\skip49
-\e@level@one@skip=\skip50
-\b@level@two@skip=\skip51
-\e@level@two@skip=\skip52
-\b@level@three@skip=\skip53
-\e@level@three@skip=\skip54
-\b@level@four@skip=\skip55
-\e@level@four@skip=\skip56
-\b@level@five@skip=\skip57
-\e@level@five@skip=\skip58
+\b@level@one@skip=\skip43
+\e@level@one@skip=\skip44
+\b@level@two@skip=\skip45
+\e@level@two@skip=\skip46
+\b@level@three@skip=\skip47
+\e@level@three@skip=\skip48
+\b@level@four@skip=\skip49
+\e@level@four@skip=\skip50
+\b@level@five@skip=\skip51
+\e@level@five@skip=\skip52
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
 y
@@ -168,24 +166,24 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 ty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen158
-\captionmargin@=\dimen159
-\captionwidth=\dimen160
-\caption@tempdima=\dimen161
-\caption@indent=\dimen162
-\caption@parindent=\dimen163
-\caption@hangindent=\dimen164
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count183
-\c@continuedfloat=\count184
+\c@caption@flags=\count96
+\c@continuedfloat=\count97
 Package caption Info: threeparttable package is loaded.
 )
-\c@APAenum=\count185
-\@text@par@indent=\skip59
-\gr@box=\box46
-\gr@boxwidth=\skip60
-\gr@boxheight=\skip61
+\c@APAenum=\count98
+\@text@par@indent=\skip53
+\gr@box=\box28
+\gr@boxwidth=\skip54
+\gr@boxheight=\skip55
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
@@ -194,39 +192,39 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
-\c@appendix=\count186
+\c@appendix=\count99
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.
 sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip62
-\f@nch@O@elh=\skip63
-\f@nch@O@erh=\skip64
-\f@nch@O@olh=\skip65
-\f@nch@O@orh=\skip66
-\f@nch@O@elf=\skip67
-\f@nch@O@erf=\skip68
-\f@nch@O@olf=\skip69
-\f@nch@O@orf=\skip70
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/endfloat/endfloat.
 sty
 Package: endfloat 2019/04/15 v2.7 LaTeX2e package puts figures and tables at en
 d (jdm)
-\c@posttable=\count187
+\c@posttable=\count100
 \efloat@postttt=\write3
-\@ef@tttopen=\count188
-\c@postfigure=\count189
+\@ef@tttopen=\count101
+\c@postfigure=\count102
 \efloat@postfff=\write4
-\@ef@fffopen=\count190
+\@ef@fffopen=\count103
 ) (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count191
+\c@float@type=\count104
 \float@exts=\toks16
-\float@box=\box47
+\float@box=\box29
 \@float@everytoks=\toks17
-\@floatcapt=\box48
+\@floatcapt=\box30
 ))
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.s
 ty
@@ -244,8 +242,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
 y
-Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip71
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip65
 For additional information on amsmath, use the `?' option.
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.st
@@ -255,53 +253,53 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen165
+\ex@=\dimen133
 ))
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
-\pmbraise@=\dimen166
+\pmbraise@=\dimen134
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count192
+\inf@bad=\count105
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count193
-\leftroot@=\count194
+\uproot@=\count106
+\leftroot@=\count107
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count195
-\DOTSCASE@=\count196
+\classnum@=\count108
+\DOTSCASE@=\count109
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box49
-\strutbox@=\box50
-\big@size=\dimen167
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen135
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count197
-\c@MaxMatrixCols=\count198
-\dotsspace@=\muskip16
-\c@parentequation=\count199
-\dspbrk@lvl=\count266
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
+\dotsspace@=\muskip10
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
 \tag@help=\toks20
-\row@=\count267
-\column@=\count268
-\maxfields@=\count269
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
 \andhelp@=\toks21
-\eqnshift@=\dimen168
-\alignsep@=\dimen169
-\tagshift@=\dimen170
-\tagwidth@=\dimen171
-\totwidth@=\dimen172
-\lineht@=\dimen173
+\eqnshift@=\dimen136
+\alignsep@=\dimen137
+\tagshift@=\dimen138
+\tagwidth@=\dimen139
+\totwidth@=\dimen140
+\lineht@=\dimen141
 \@envbody=\toks22
-\multlinegap=\skip72
-\multlinetaggap=\skip73
+\multlinegap=\skip66
+\multlinetaggap=\skip67
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.st
 y
@@ -311,15 +309,172 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/01/25 v2.0m Standard LaTeX package
-) (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.st
-y
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.s
+ty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
 ) (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.st
 y
-Package: textcomp 2020/02/02 v2.0m Standard LaTeX package
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.st
 y
@@ -379,8 +534,16 @@ Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.st
 y
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
+Package: hycolor 2019/12/15 v1.9 Color options for hyperref/bookmark (HO)
+
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/xcolor-pat
+ch.sty
+Package: xcolor-patch 2019/12/15 xcolor patch
+
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/hopatch.s
+ty
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+)))
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltx
 macro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
@@ -393,9 +556,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 s.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen174
-\Hy@linkcounter=\count270
-\Hy@pagecounter=\count271
+\@linkdim=\dimen142
+\Hy@linkcounter=\count117
+\Hy@pagecounter=\count118
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
 f
@@ -411,8 +574,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count272
-\pdfmajorversion=\count273
+\Hy@SavedSpaceFactor=\count119
+\pdfmajorversion=\count120
 Package hyperref Info: Option `unicode' set `true' on input line 4421.
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
@@ -427,13 +590,13 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count274
+\c@Hy@tempcnt=\count121
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
+\Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen175
+\XeTeXLinkMargin=\dimen143
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.st
 y
@@ -444,9 +607,9 @@ tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count275
-\Field@Width=\dimen176
-\Fld@charsize=\dimen177
+\Fld@menulength=\count122
+\Field@Width=\dimen144
+\Fld@charsize=\dimen145
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -461,9 +624,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 i.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count276
-\c@Item=\count277
-\c@Hfootnote=\count278
+\Hy@abspage=\count123
+\c@Item=\count124
+\c@Hfootnote=\count125
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -475,8 +638,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 d.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count279
-\c@bookmark@seq@number=\count280
+\Fld@listcount=\count126
+\c@bookmark@seq@number=\count127
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
 unfilecheck.sty
@@ -489,17 +652,17 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip74
+\Hy@SectionHShift=\skip68
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.
 sty
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
-\csq@reset=\count281
-\csq@gtype=\count282
-\csq@glevel=\count283
-\csq@qlevel=\count284
-\csq@maxlvl=\count285
-\csq@tshold=\count286
+\csq@reset=\count128
+\csq@gtype=\count129
+\csq@glevel=\count130
+\csq@qlevel=\count131
+\csq@maxlvl=\count132
+\csq@tshold=\count133
 \csq@ltx@everypar=\toks26
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.
@@ -521,21 +684,21 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip75
-\LTright=\skip76
-\LTpre=\skip77
-\LTpost=\skip78
-\LTchunksize=\count287
-\LTcapwidth=\dimen178
-\LT@head=\box51
-\LT@firsthead=\box52
-\LT@foot=\box53
-\LT@lastfoot=\box54
-\LT@cols=\count288
-\LT@rows=\count289
-\c@LT@tables=\count290
-\c@LT@chunks=\count291
+Package: longtable 2019/02/06 v4.12 Multi-page Table package (DPC)
+\LTleft=\skip69
+\LTright=\skip70
+\LTpre=\skip71
+\LTpost=\skip72
+\LTchunksize=\count134
+\LTcapwidth=\dimen146
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count135
+\LT@rows=\count136
+\c@LT@tables=\count137
+\c@LT@chunks=\count138
 \LT@p@ftn=\toks27
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.st
@@ -545,29 +708,29 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
 sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip79
-\multirow@cntb=\count292
-\multirow@dima=\skip80
-\bigstrutjot=\dimen179
+\multirow@colwidth=\skip73
+\multirow@cntb=\count139
+\multirow@dima=\skip74
+\bigstrutjot=\dimen147
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen180
-\ar@mcellbox=\box55
-\extrarowheight=\dimen181
+\col@sep=\dimen148
+\ar@mcellbox=\box37
+\extrarowheight=\dimen149
 \NC@list=\toks28
-\extratabsurround=\skip81
-\backup@length=\skip82
-\ar@cellbox=\box56
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box38
 )
-\TX@col@width=\dimen182
-\TX@old@table=\dimen183
-\TX@old@col=\dimen184
-\TX@target=\dimen185
-\TX@delta=\dimen186
-\TX@cols=\count293
+\TX@col@width=\dimen150
+\TX@old@table=\dimen151
+\TX@old@col=\dimen152
+\TX@target=\dimen153
+\TX@delta=\dimen154
+\TX@cols=\count140
 \TX@ftn=\toks29
 )
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/th
@@ -582,65 +745,65 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip83
+\TPTL@width=\skip77
 )
-\longtablewidth=\skip84
+\longtablewidth=\skip78
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count294
+\linenopenalty=\count141
 \output=\toks30
-\linenoprevgraf=\count295
-\linenumbersep=\dimen187
-\linenumberwidth=\dimen188
-\c@linenumber=\count296
-\c@pagewiselinenumber=\count297
-\c@LN@truepage=\count298
-\c@internallinenumber=\count299
-\c@internallinenumbers=\count300
-\quotelinenumbersep=\dimen189
-\bframerule=\dimen190
-\bframesep=\dimen191
-\bframebox=\box57
+\linenoprevgraf=\count142
+\linenumbersep=\dimen155
+\linenumberwidth=\dimen156
+\c@linenumber=\count143
+\c@pagewiselinenumber=\count144
+\c@LN@truepage=\count145
+\c@internallinenumber=\count146
+\c@internallinenumbers=\count147
+\quotelinenumbersep=\dimen157
+\bframerule=\dimen158
+\bframesep=\dimen159
+\bframebox=\box39
 
 LaTeX Warning: Command \@parboxrestore  has changed.
                Check if current package is valid.
 
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.
-sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-\cslhangindent=\skip85
+\cslhangindent=\skip79
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
-(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
-d-pdfmode.def
-File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count301
-\l__pdf_internal_box=\box58
-) (./GS_physics_in_fluid_speech.aux)
+(./GS_physics_in_fluid_speech.aux)
 \openout1 = `GS_physics_in_fluid_speech.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+12.
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+(c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -665,7 +828,7 @@ LaTeX Font Info:    ... okay on input line 119.
 * \marginparwidth=95.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=28.45274pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -701,8 +864,8 @@ sty
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 119.
+\AtBeginShipoutBox=\box40
+Package hyperref Info: Link coloring OFF on input line 112.
 
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -716,101 +879,130 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count302
+\c@section@level=\count148
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 (./GS_physics_in_fluid_speech.out) (./GS_physics_in_fluid_speech.out)
 \@outlinefile=\write5
 \openout5 = `GS_physics_in_fluid_speech.out'.
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-21.
+14.
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-21.
+14.
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-21.
+14.
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-121.
+114.
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-121.
+114.
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 121.
+(Font)              <12> on input line 114.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 121.
+(Font)              <8> on input line 114.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 121.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121
+(Font)              <6> on input line 114.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 114
 .
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121
+LaTeX Font Info:    Trying to load font information for U+msb on input line 114
 .
 (c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/p
 dftex.map}
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+] [2] [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[4] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7] [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[9] [10] [11]
 <GS_physics_in_fluid_speech_files/figure-latex/method_stance_pic-1.pdf, id=164,
  469.755pt x 289.08pt>
 File: GS_physics_in_fluid_speech_files/figure-latex/method_stance_pic-1.pdf Gra
 phic file (type pdf)
 <use GS_physics_in_fluid_speech_files/figure-latex/method_stance_pic-1.pdf>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/method_s
-tance_pic-1.pdf  used on input line 189.
+tance_pic-1.pdf  used on input line 182.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [12 <./GS_physics_in_fluid_speech_files/figure-latex/method_stance_pic-1.pdf>] 
 [13]
+Underfull \vbox (badness 2189) has occurred while \output is active []
+
+[14]
 <GS_physics_in_fluid_speech_files/figure-latex/plot_example_time_series-1.pdf, 
-id=186, 469.755pt x 361.35pt>
+id=191, 469.755pt x 361.35pt>
 File: GS_physics_in_fluid_speech_files/figure-latex/plot_example_time_series-1.
 pdf Graphic file (type pdf)
 <use GS_physics_in_fluid_speech_files/figure-latex/plot_example_time_series-1.p
 df>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/plot_exa
-mple_time_series-1.pdf  used on input line 228.
+mple_time_series-1.pdf  used on input line 221.
 (pdftex.def)             Requested size: 469.75386pt x 361.34912pt.
-[14] [15 <./GS_physics_in_fluid_speech_files/figure-latex/plot_example_time_ser
-ies-1.pdf>]
-<GS_physics_in_fluid_speech_files/figure-latex/manipulation_checkplot-1.pdf, id
-=201, 361.35pt x 325.215pt>
-File: GS_physics_in_fluid_speech_files/figure-latex/manipulation_checkplot-1.pd
-f Graphic file (type pdf)
-<use GS_physics_in_fluid_speech_files/figure-latex/manipulation_checkplot-1.pdf
->
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[15 <./GS_physics_in_fluid_speech_files/figure-latex/plot_example_time_series-1
+.pdf>]
+<GS_physics_in_fluid_speech_files/figure-latex/manipulation_check-1.pdf, id=201
+, 361.35pt x 325.215pt>
+File: GS_physics_in_fluid_speech_files/figure-latex/manipulation_check-1.pdf Gr
+aphic file (type pdf)
+<use GS_physics_in_fluid_speech_files/figure-latex/manipulation_check-1.pdf>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/manipula
-tion_checkplot-1.pdf  used on input line 233.
+tion_check-1.pdf  used on input line 227.
 (pdftex.def)             Requested size: 361.34912pt x 325.2142pt.
-[16 <./GS_physics_in_fluid_speech_files/figure-latex/manipulation_checkplot-1.p
-df>]
-<GS_physics_in_fluid_speech_files/figure-latex/plot_avF0_avENV-1.pdf, id=213, 3
+
+Underfull \vbox (badness 2865) has occurred while \output is active []
+
+[16 <./GS_physics_in_fluid_speech_files/figure-latex/manipulation_check-1.pdf>]
+[17]
+<GS_physics_in_fluid_speech_files/figure-latex/plot_avF0_avENV-1.pdf, id=218, 3
 61.35pt x 325.215pt>
 File: GS_physics_in_fluid_speech_files/figure-latex/plot_avF0_avENV-1.pdf Graph
 ic file (type pdf)
 <use GS_physics_in_fluid_speech_files/figure-latex/plot_avF0_avENV-1.pdf>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/plot_avF
-0_avENV-1.pdf  used on input line 252.
+0_avENV-1.pdf  used on input line 247.
 (pdftex.def)             Requested size: 361.34912pt x 325.2142pt.
-[17] [18 <./GS_physics_in_fluid_speech_files/figure-latex/plot_avF0_avENV-1.pdf
->] [19] [20]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18 <./GS_physics_in_fluid_speech_files/figure-latex/plot_avF0_avENV-1.pdf>] [1
+9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[20]
 <GS_physics_in_fluid_speech_files/figure-latex/movementplot_avF0_avENV-1.pdf, i
 d=245, 469.755pt x 578.16pt>
 File: GS_physics_in_fluid_speech_files/figure-latex/movementplot_avF0_avENV-1.p
@@ -818,10 +1010,10 @@ df Graphic file (type pdf)
 <use GS_physics_in_fluid_speech_files/figure-latex/movementplot_avF0_avENV-1.pd
 f>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/movement
-plot_avF0_avENV-1.pdf  used on input line 285.
+plot_avF0_avENV-1.pdf  used on input line 280.
 (pdftex.def)             Requested size: 469.75386pt x 578.15858pt.
 
-Overfull \hbox (28.90639pt too wide) in paragraph at lines 285--286
+Overfull \hbox (28.90639pt too wide) in paragraph at lines 280--281
 [][]  
  []
 
@@ -833,8 +1025,11 @@ File: GS_physics_in_fluid_speech_files/figure-latex/table_anddiff-1.pdf Graphic
  file (type pdf)
 <use GS_physics_in_fluid_speech_files/figure-latex/table_anddiff-1.pdf>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/table_an
-ddiff-1.pdf  used on input line 290.
+ddiff-1.pdf  used on input line 285.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [22 <./GS_physics_in_fluid_speech_files/figure-latex/table_anddiff-1.pdf>] [23]
 <GS_physics_in_fluid_speech_files/figure-latex/impact analysis-1.pdf, id=279, 4
 69.755pt x 325.215pt>
@@ -842,406 +1037,402 @@ File: GS_physics_in_fluid_speech_files/figure-latex/impact analysis-1.pdf Graph
 ic file (type pdf)
 <use GS_physics_in_fluid_speech_files/figure-latex/impact analysis-1.pdf>
 Package pdftex.def Info: GS_physics_in_fluid_speech_files/figure-latex/impact a
-nalysis-1.pdf  used on input line 319.
+nalysis-1.pdf  used on input line 314.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[24 <./GS_physics_in_fluid_speech_files/figure-latex/impact analysis-1.pdf>] [2
-5] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]pdfTeX warning (ext4): dest
-ination with the same identifier (name{ref-amazeenCouplingBreathingMovement2001
-}) has been already used, duplicate ignored
+[24 <./GS_physics_in_fluid_speech_files/figure-latex/impact analysis-1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[25] [26] [27] [28] [29] [30] [31] [32] [33] [34]pdfTeX warning (ext4): destina
+tion with the same identifier (name{ref-cooperriderForegroundGestureBackground2
+019}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.553 ...f-amazeenCouplingBreathingMovement2001}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-cooperriderForegroundGestureBackgroun
-d2019}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.556 ...erriderForegroundGestureBackground2019}{}
+l.544 ...erriderForegroundGestureBackground2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-corballisHandMouthOrigins2002}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.559 ...rget{ref-corballisHandMouthOrigins2002}{}
+l.547 ...rget{ref-corballisHandMouthOrigins2002}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-cordoPropertiesPosturalAdjustments198
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.562 ...cordoPropertiesPosturalAdjustments1982}{}
+l.550 ...cordoPropertiesPosturalAdjustments1982}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-cravottaEffectsEncouragingUse2019}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 ...{ref-cravottaEffectsEncouragingUse2019}{}
+l.553 ...{ref-cravottaEffectsEncouragingUse2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-dannerQuantitativeAnalysisMultimodal2
 018}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.568 ...nnerQuantitativeAnalysisMultimodal2018}{}
-                                                  % [36]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-ejiriRelationshipRhythmicBehavio
-r1998}) has been already used, duplicate ignored
+l.556 ...nnerQuantitativeAnalysisMultimodal2018}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ejiriRelationshipRhythmicBehavior1998
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.571 ...-ejiriRelationshipRhythmicBehavior1998}{}
+l.559 ...-ejiriRelationshipRhythmicBehavior1998}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ejiriCooccurencesPreverbalVocal2001})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.574 ...ef-ejiriCooccurencesPreverbalVocal2001}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-esteve-gibertProsodicStructureShapes2
-013}) has been already used, duplicate ignored
+l.562 ...ef-ejiriCooccurencesPreverbalVocal2001}{}
+                                                  % [35]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-esteve-gibertProsodicStructureSh
+apes2013}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.577 ...teve-gibertProsodicStructureShapes2013}{}
+l.565 ...teve-gibertProsodicStructureShapes2013}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-feyereisenCognitivePsychologySpeechRe
 lated2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.580 ...enCognitivePsychologySpeechRelated2017}{}
+l.568 ...enCognitivePsychologySpeechRelated2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-frohlichMultimodalCommunicationLangua
 ge2019}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.583 ...ichMultimodalCommunicationLanguage2019}{}
+l.571 ...ichMultimodalCommunicationLanguage2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-gardenforsDemonstrationPantomimeEvolu
 tion2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.586 ...orsDemonstrationPantomimeEvolution2017}{}
+l.574 ...orsDemonstrationPantomimeEvolution2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ghazanfarMultisensoryVocalCommunicati
 on2013}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.589 ...nfarMultisensoryVocalCommunication2013}{}
+l.577 ...nfarMultisensoryVocalCommunication2013}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ghazanfarVocaltractResonancesIndexica
 l2007}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.592 ...anfarVocaltractResonancesIndexical2007}{}
+l.580 ...anfarVocaltractResonancesIndexical2007}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ginosarLearningIndividualStyles2019})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.595 ...ef-ginosarLearningIndividualStyles2019}{}
-                                                  % [37]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-hardusToolUseWild2009}) has been
- already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.598 ...\hypertarget{ref-hardusToolUseWild2009}{}
+l.583 ...ef-ginosarLearningIndividualStyles2019}{}
                                                   %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-hastieGamGeneralizedAdditive2019}) ha
-s been already used, duplicate ignored
+nation with the same identifier (name{ref-hardusToolUseWild2009}) has been alre
+ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.601 ...t{ref-hastieGamGeneralizedAdditive2019}{}
+l.586 ...\hypertarget{ref-hardusToolUseWild2009}{}
+                                                  % [36]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-hastieGamGeneralizedAdditive2019
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.589 ...t{ref-hastieGamGeneralizedAdditive2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-heAmplitudeEnvelopeKinematics2017a}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.604 ...ref-heAmplitudeEnvelopeKinematics2017a}{}
+l.592 ...ref-heAmplitudeEnvelopeKinematics2017a}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-hollerMultimodalLanguageProcessing201
 9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.607 ...hollerMultimodalLanguageProcessing2019}{}
+l.595 ...hollerMultimodalLanguageProcessing2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-iversonHandMouthBrain2005}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.610 ...ertarget{ref-iversonHandMouthBrain2005}{}
+l.598 ...ertarget{ref-iversonHandMouthBrain2005}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kelsoConvergingEvidenceSupport1984}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.613 ...ref-kelsoConvergingEvidenceSupport1984}{}
+l.601 ...ref-kelsoConvergingEvidenceSupport1984}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kendonReflectionsGesturefirstHypothes
 is2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.616 ...nReflectionsGesturefirstHypothesis2017}{}
+l.604 ...nReflectionsGesturefirstHypothesis2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kitaPointingWhereLanguage2003}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.619 ...rget{ref-kitaPointingWhereLanguage2003}{}
+l.607 ...rget{ref-kitaPointingWhereLanguage2003}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-krahmerEffectsVisualBeats2007}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.622 ...rget{ref-krahmerEffectsVisualBeats2007}{}
-                                                  % [38]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-krivokapicGesturalCoordinationPr
-osodic2014}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.625 ...okapicGesturalCoordinationProsodic2014}{}
+l.610 ...rget{ref-krahmerEffectsVisualBeats2007}{}
                                                   %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-krivokapicKinematicStudyProsodic2017}
-) has been already used, duplicate ignored
+nation with the same identifier (name{ref-krivokapicGesturalCoordinationProsodi
+c2014}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.628 ...f-krivokapicKinematicStudyProsodic2017}{}
+l.613 ...okapicGesturalCoordinationProsodic2014}{}
+                                                  % [37]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-krivokapicKinematicStudyProsodic
+2017}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.616 ...f-krivokapicKinematicStudyProsodic2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kucherenkoAnalyzingInputOutput2019}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.631 ...ref-kucherenkoAnalyzingInputOutput2019}{}
+l.619 ...ref-kucherenkoAnalyzingInputOutput2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-lancasterRespiratoryMuscleActivity199
 5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.634 ...lancasterRespiratoryMuscleActivity1995}{}
+l.622 ...lancasterRespiratoryMuscleActivity1995}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-larssonBipedalStepsDevelopment2019}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.637 ...ref-larssonBipedalStepsDevelopment2019}{}
+l.625 ...ref-larssonBipedalStepsDevelopment2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-leonardTemporalRelationBeat2011}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.640 ...et{ref-leonardTemporalRelationBeat2011}{}
+l.628 ...et{ref-leonardTemporalRelationBeat2011}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-levinsonOriginHumanMultimodal2014}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.643 ...{ref-levinsonOriginHumanMultimodal2014}{}
-                                                  % [39]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-loehrTemporalStructuralPragmatic
-2012}) has been already used, duplicate ignored
+l.631 ...{ref-levinsonOriginHumanMultimodal2014}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-loehrTemporalStructuralPragmatic2012}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.646 ...f-loehrTemporalStructuralPragmatic2012}{}
+l.634 ...f-loehrTemporalStructuralPragmatic2012}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-mcclavePitchManualGestures1998}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.649 ...get{ref-mcclavePitchManualGestures1998}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-mendoza-dentonSemioticLayeringGesture
-2011}) has been already used, duplicate ignored
+l.637 ...get{ref-mcclavePitchManualGestures1998}{}
+                                                  % [38]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-mendoza-dentonSemioticLayeringGe
+sture2011}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.652 ...doza-dentonSemioticLayeringGesture2011}{}
+l.640 ...doza-dentonSemioticLayeringGesture2011}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-parrellSpatiotemporalCouplingSpeech20
 14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.655 ...arrellSpatiotemporalCouplingSpeech2014}{}
+l.643 ...arrellSpatiotemporalCouplingSpeech2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-perrierMotorEquivalenceSpeech2015}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.658 ...{ref-perrierMotorEquivalenceSpeech2015}{}
+l.646 ...{ref-perrierMotorEquivalenceSpeech2015}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pinheiroNlmeLinearNonlinear2019}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.661 ...et{ref-pinheiroNlmeLinearNonlinear2019}{}
+l.649 ...et{ref-pinheiroNlmeLinearNonlinear2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pisanskiVoiceModulationWindow2016}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.664 ...{ref-pisanskiVoiceModulationWindow2016}{}
+l.652 ...{ref-pisanskiVoiceModulationWindow2016}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pisanskiReturnOzVoice2014}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.667 ...ertarget{ref-pisanskiReturnOzVoice2014}{}
+l.655 ...ertarget{ref-pisanskiReturnOzVoice2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pisanskiCanBlindPersons2016}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.670 ...target{ref-pisanskiCanBlindPersons2016}{}
-                                                  % [40]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-pouwEntrainmentModulationGesture
-2019}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.673 ...f-pouwEntrainmentModulationGesture2019}{}
+l.658 ...target{ref-pisanskiCanBlindPersons2016}{}
                                                   %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-pouwQuantifyingGesturespeechSynchrony
-2019}) has been already used, duplicate ignored
+nation with the same identifier (name{ref-pouwEntrainmentModulationGesture2019}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.676 ...wQuantifyingGesturespeechSynchrony2019}{}
+l.661 ...f-pouwEntrainmentModulationGesture2019}{}
+                                                  % [39]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-pouwQuantifyingGesturespeechSync
+hrony2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.664 ...wQuantifyingGesturespeechSynchrony2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwEnergyFlowsGesturespeech2019a}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.679 ...{ref-pouwEnergyFlowsGesturespeech2019a}{}
+l.667 ...{ref-pouwEnergyFlowsGesturespeech2019a}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwGesturespeechPhysicsBiomechanical
 2019}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.682 ...wGesturespeechPhysicsBiomechanical2019}{}
+l.670 ...wGesturespeechPhysicsBiomechanical2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwAcousticSpecificationUpper2019}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.685 ...ref-pouwAcousticSpecificationUpper2019}{}
+l.673 ...ref-pouwAcousticSpecificationUpper2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwSocialResonanceAcoustic2019}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.688 ...et{ref-pouwSocialResonanceAcoustic2019}{}
+l.676 ...et{ref-pouwSocialResonanceAcoustic2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pouwMaterialsTutorialGespin20192019})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.691 ...ef-pouwMaterialsTutorialGespin20192019}{}
+l.679 ...ef-pouwMaterialsTutorialGespin20192019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-prieurOriginsGesturesLanguage2019}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.694 ...{ref-prieurOriginsGesturesLanguage2019}{}
-                                                  % [41]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-ravignaniRhythmSpeechAnimal2019}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.697 ...et{ref-ravignaniRhythmSpeechAnimal2019}{}
+l.682 ...{ref-prieurOriginsGesturesLanguage2019}{}
                                                   %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-rochet-capellanSpeechFocusPosition200
-8}) has been already used, duplicate ignored
+nation with the same identifier (name{ref-ravignaniRhythmSpeechAnimal2019}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.700 ...rochet-capellanSpeechFocusPosition2008}{}
+l.685 ...et{ref-ravignaniRhythmSpeechAnimal2019}{}
+                                                  % [40]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-rochet-capellanSpeechFocusPositi
+on2008}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.688 ...rochet-capellanSpeechFocusPosition2008}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-roschWaveletCompGuidedTour2014}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.703 ...get{ref-roschWaveletCompGuidedTour2014}{}
+l.691 ...get{ref-roschWaveletCompGuidedTour2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ruiterProductionGestureSpeech2000}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.706 ...{ref-ruiterProductionGestureSpeech2000}{}
+l.694 ...{ref-ruiterProductionGestureSpeech2000}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-silvaSteadystateStressOne2007}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.709 ...rget{ref-silvaSteadystateStressOne2007}{}
+l.697 ...rget{ref-silvaSteadystateStressOne2007}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-stoltmannSyllablepointingGestureCoord
 ination2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.712 ...yllablepointingGestureCoordination2017}{}
+l.700 ...yllablepointingGestureCoordination2017}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-streeckDepictingGesture2008}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.715 ...target{ref-streeckDepictingGesture2008}{}
+l.703 ...target{ref-streeckDepictingGesture2008}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-tomaselloOriginsHumanCommunication200
 8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.718 ...tomaselloOriginsHumanCommunication2008}{}
-                                                  % [42]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-treffnerIntentionalAttentionalDy
-namics2002}) has been already used, duplicate ignored
+l.706 ...tomaselloOriginsHumanCommunication2008}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-treffnerIntentionalAttentionalDynamic
+s2002}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.721 ...fnerIntentionalAttentionalDynamics2002}{}
+l.709 ...fnerIntentionalAttentionalDynamics2002}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-turveyCoordination1990}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.724 ...hypertarget{ref-turveyCoordination1990}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-turveyMediumHapticPerception2014}) ha
-s been already used, duplicate ignored
+l.712 ...hypertarget{ref-turveyCoordination1990}{}
+                                                  % [41]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-turveyMediumHapticPerception2014
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.727 ...t{ref-turveyMediumHapticPerception2014}{}
+l.715 ...t{ref-turveyMediumHapticPerception2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-wagnerGestureSpeechInteraction2014}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.730 ...ref-wagnerGestureSpeechInteraction2014}{}
+l.718 ...ref-wagnerGestureSpeechInteraction2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-winkelmannWrasspInterfaceASSP2018}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.733 ...{ref-winkelmannWrasspInterfaceASSP2018}{}
+l.721 ...{ref-winkelmannWrasspInterfaceASSP2018}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-zelicArticulatoryConstraintsSpontaneo
 us2015}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.736 ...ArticulatoryConstraintsSpontaneous2015}{}
+l.724 ...ArticulatoryConstraintsSpontaneous2015}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-zhangVocalDevelopmentMorphological201
 8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.739 ...zhangVocalDevelopmentMorphological2018}{}
+l.727 ...zhangVocalDevelopmentMorphological2018}{}
                                                   % AED endfloat: Processing en
-d Figures and Tables [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 745.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 745.
+d Figures and Tables [42]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 733.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 733.
 (./GS_physics_in_fluid_speech.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 745.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 745.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 733.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 733.
 Package rerunfilecheck Info: File `GS_physics_in_fluid_speech.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 754D28F64D50A4C6EB5936B304A0EB0F;4531.
  ) 
 Here is how much of TeX's memory you used:
- 14171 strings out of 483194
- 212762 string characters out of 5964919
- 464745 words of memory out of 5000000
- 28750 multiletter control sequences out of 15000+600000
- 575557 words of font info for 59 fonts, out of 8000000 for 9000
+ 14558 strings out of 494106
+ 216860 string characters out of 6172215
+ 293572 words of memory out of 5000000
+ 18237 multiletter control sequences out of 15000+600000
+ 47623 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,11n,51p,2130b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,11n,51p,2530b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}<c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmb
 x12.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
@@ -1249,10 +1440,10 @@ m/lmr12.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publ
 ic/lm/lmr8.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
 ublic/lm/lmri12.pfb><c:/Users/wimpo/AppData/Roaming/TinyTeX/texmf-dist/fonts/ty
 pe1/public/lm/lmss8.pfb>
-Output written on GS_physics_in_fluid_speech.pdf (43 pages, 2337826 bytes).
+Output written on GS_physics_in_fluid_speech.pdf (42 pages, 2350557 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 531 compressed objects within 6 object streams
+ 153 named destinations out of 1000 (max. 500000)
  228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
